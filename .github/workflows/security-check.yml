@@ -1,0 +1,36 @@
+name: Security & Visibility Check
+
+on:
+  push:
+
+jobs:
+  security-scan:
+    name: Secret & Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan for secrets with Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  check-visibility:
+    name: Check Repository Visibility
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify repository is public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VISIBILITY=$(gh api repos/${{ github.repository }} --jq '.visibility')
+          echo "Repository visibility: $VISIBILITY"
+          if [ "$VISIBILITY" != "public" ]; then
+            echo "::error::Repository is NOT public (visibility=$VISIBILITY). Please make the repository public."
+            exit 1
+          fi
+          echo "✅ Repository is public."
+        shell: bash
