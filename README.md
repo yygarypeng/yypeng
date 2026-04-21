@@ -1,5 +1,41 @@
 <h1 align="center">Hi, I'm Gary Peng (yypeng) 👋</h1>
 
+## Personal Portfolio Website
+
+This repository now includes a single-page personal portfolio site for physics PhD applications:
+
+- `index.html`
+
+### Local Preview
+
+Open `index.html` directly in your browser.
+
+### Customize Before Applications
+
+Replace placeholder content in `index.html`:
+
+- About section summary
+- Research interests and project descriptions
+- Publications / preprints
+- Contact email and profile links
+
+If you have a CV PDF, place it at:
+
+- `assets/Gary_Peng_CV.pdf`
+
+### Publish with GitHub Pages
+
+This repository is configured as a plain static site for GitHub Pages.
+
+1. Push this repo to GitHub.
+2. In GitHub, open **Settings -> Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select your main branch and root folder (`/`), then save.
+5. Your site URL will be:
+
+- `https://<username>.github.io/` if this repo is `<username>.github.io`
+- `https://<username>.github.io/<repo>/` for a normal project repo
+
 <p align="center">
   <a href="https://github.com/yygarypeng">
     <img src="https://komarev.com/ghpvc/?username=yygarypeng&label=Profile%20views&color=0e75b6&style=flat" alt="profile view counter" />
