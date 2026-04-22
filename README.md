@@ -18,14 +18,14 @@ No build step is required.
 
 Choose either option:
 
-1. Open `/home/runner/work/yypeng/yypeng/index.html` directly in a browser, or
+1. Open `index.html` directly in a browser, or
 2. Run a simple local static server from the repository root:
 
    ```bash
    python3 -m http.server 8000
    ```
 
-   Then visit `http://localhost:8000/index.html`.
+   Then visit `http://localhost:8000/`.
 
 ## Customize Content
 
