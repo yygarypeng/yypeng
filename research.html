@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
     <meta
       name="description"
       content="Research programs in ATLAS Higgs physics, reconstruction, and precision inference by Yuan-Yen Peng."
     />
     <title>Research | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, { delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '$', right: '$', display: false }
+      ]});"></script>
   </head>
   <body>
     <header class="masthead masthead-short" aria-label="Research hero">
@@ -25,9 +35,7 @@
         </div>
       </div>
       <div class="hero-copy wrap-wide">
-        <!-- <p class="hero-kicker">ATLAS Physics Programs</p> -->
         <h1>Research</h1>
-        <!-- <p class="hero-sub"></p> -->
       </div>
     </header>
 
@@ -44,7 +52,7 @@
         <article class="content-block">
           <h2 class="section-title">Core Themes</h2>
           <ul class="list-clean">
-            <li>Quantum-correlation measurements in H -> WW* -> lnu lnu</li>
+            <li>Quantum-correlation measurements in $H \to WW^* \to \ell\nu\ell\nu$</li>
             <li>W rest-frame reconstruction in under-constrained final states</li>
             <li>Physics-constrained transformer and flow-based models for event inference</li>
             <li>Higgs and electroweak coupling studies</li>

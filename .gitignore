@@ -1,1 +1,7 @@
 .DS_Store
+AGENTS.md
+_fig/
+.agents/
+skills-lock.json
+css_classes.txt
+classes.txt

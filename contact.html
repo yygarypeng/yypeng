@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
     <meta
       name="description"
       content="Contact and collaboration links for Yuan-Yen Peng."
     />
     <title>Contact | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, { delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '$', right: '$', display: false }
+      ]});"></script>
   </head>
   <body>
     <header class="masthead masthead-short" aria-label="Contact hero">
@@ -25,37 +35,37 @@
         </div>
       </div>
       <div class="hero-copy wrap-wide">
-        <!-- <p class="hero-kicker">Collaborate and Connect</p> -->
         <h1>Contact</h1>
-        <!-- <p class="hero-sub">Open channels for physics discussion, analysis collaboration, and software exchange</p> -->
       </div>
     </header>
 
-    <main class="content">
-      <section class="split-2">
-        <article class="content-block">
-          <h2 class="section-title">Profiles</h2>
-          <ul class="list-clean">
-            <li>Email: <a href="mailto:yuan-yen.peng@cern.ch">yuan-yen.peng@cern.ch</a></li>
-            <li>GitHub: <a href="https://github.com/yygarypeng">@yygarypeng</a></li>
-            <li>CERN GitLab: <a href="https://gitlab.cern.ch/ypeng">@ypeng</a></li>
-            <li>Docker Hub: <a href="https://hub.docker.com/repositories/yygarypeng">@yygarypeng</a></li>
-          </ul>
-        </article>
+<main class="content">
+  <section class="content-block">
+    <div class="split-2">
+      <div>
+        <h2 class="section-title">Profiles</h2>
+        <ul class="list-clean">
+          <li>Email: <a href="mailto:yuan-yen.peng@cern.ch">yuan-yen.peng@cern.ch</a></li>
+          <li>GitHub: <a href="https://github.com/yygarypeng">@yygarypeng</a></li>
+          <li>CERN GitLab: <a href="https://gitlab.cern.ch/ypeng">@ypeng</a></li>
+          <li>Docker Hub: <a href="https://hub.docker.com/repositories/yygarypeng">@yygarypeng</a></li>
+        </ul>
+      </div>
 
-        <article class="content-block">
-          <h2 class="section-title">Availability</h2>
-          <p>
-            Based in Hsinchu, Taiwan. For ATLAS and collaboration-related discussions,
-            CERN email and CERN GitLab are preferred.
-          </p>
-          <div class="button-row">
-            <a href="./research.html">Research Programs</a>
-            <a href="./projects.html">Project Portfolio</a>
-          </div>
-        </article>
-      </section>
-    </main>
+      <div>
+        <h2 class="section-title">Availability</h2>
+        <ul class="list-clean">
+          <li><strong>Location:</strong> Hsinchu, Taiwan</li>
+          <li><strong>Preferred:</strong> CERN email/GitLab for ATLAS/collaboration</li>
+        </ul>
+        <div class="button-row">
+          <a href="./research.html">Research Programs</a>
+          <a href="./projects.html">Project Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
     <footer>Last updated: April 2026. ATLAS experimental physics and detector R&D.</footer>
   </body>

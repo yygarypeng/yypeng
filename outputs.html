@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
     <meta
       name="description"
       content="Scientific outputs, talks, and technical highlights from ATLAS research by Yuan-Yen Peng."
     />
     <title>Outputs | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, { delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '$', right: '$', display: false }
+      ]});"></script>
   </head>
   <body>
     <header class="masthead masthead-short" aria-label="Outputs hero">
@@ -25,9 +35,7 @@
         </div>
       </div>
       <div class="hero-copy wrap-wide">
-        <!-- <p class="hero-kicker">Scientific Deliverables</p> -->
         <h1>Outputs</h1>
-        <!-- <p class="hero-sub">Thesis, collaboration talks, and technical milestones</p> -->
       </div>
     </header>
 
@@ -35,7 +43,7 @@
       <section class="content-block committee-quicklook" aria-label="evidence summary">
         <h2 class="section-title">Evidence Summary</h2>
         <ul class="list-clean">
-          <li><strong>Thesis:</strong> Quantum Entanglement Measurements in H to WW* to lnu lnu with the ATLAS detector.</li>
+          <li><strong>Thesis:</strong> Quantum Entanglement Measurements in $H \to WW^* \to \ell\nu\ell\nu$ with the ATLAS detector.</li>
           <li><strong>Collaboration Output:</strong> Co-author of ATLAS internal note ANA-HIGP-2024-27-INT1.</li>
           <li><strong>Presentations:</strong> ATLAS NRML Workshop 2025 and ATLAS Collaboration Week 2024 talks.</li>
           <li><strong>Engineering:</strong> Public code and collaboration software across GitHub, CERN GitLab, and Docker Hub.</li>
@@ -49,7 +57,7 @@
             <li>
               MSc thesis:
               <a href="https://etd.lib.nthu.edu.tw/thesis/detail/d5387241bad28abb4b3cb0facb63184d/"
-                >Quantum Entanglement Measurements in H to WW* to lnu lnu with the ATLAS detector</a
+                >Quantum Entanglement Measurements in $H \to WW^* \to \ell\nu\ell\nu$ with the ATLAS detector</a
               >
             </li>
             <li>ATLAS internal note co-author: ANA-HIGP-2024-27-INT1</li>
@@ -71,11 +79,11 @@
             </li>
             <li>
               ATLAS Collaboration Week 2024:
-              <a href="https://indico.cern.ch/event/1441377/contributions/6065508/">W-boson rest-frame reconstruction in H to WW*</a>
+              <a href="https://indico.cern.ch/event/1441377/contributions/6065508/">W-boson rest-frame reconstruction in $H \to WW^*$</a>
             </li>
             <li>
               Physical Society of Taiwan Meeting 2025:
-              <a href="https://drive.google.com/drive/folders/1lKaTh5b-Rn8Loeo0d4tou3MY7xi35qKh?usp=drive_link">Poster on quantum entanglement in H to WW* to lnu lnu</a>
+              <a href="https://drive.google.com/drive/folders/1lKaTh5b-Rn8Loeo0d4tou3MY7xi35qKh?usp=drive_link">Poster on quantum entanglement in $H \to WW^* \to \ell\nu\ell\nu$</a>
             </li>
             <li>
               ATLAS HWW Workshop 2023:

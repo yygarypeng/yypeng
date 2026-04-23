@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
     <meta
       name="description"
       content="Yuan-Yen Peng - ATLAS experimental physics, machine learning reconstruction, and HGTD detector software."
     />
     <title>Yuan-Yen Peng | ATLAS Experimental Physics</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, { delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '$', right: '$', display: false }
+      ]});"></script>
   </head>
   <body>
     <header class="masthead" aria-label="Site hero">
@@ -25,38 +35,28 @@
         </div>
       </div>
       <div class="hero-copy wrap-wide">
-        <!-- <p class="hero-kicker">ATLAS Experiment at CERN</p> -->
         <h1>Yuan-Yen Peng</h1>
         <p class="hero-sub">Collider Physics & Machine Learning</p>
-        <!-- <p class="hero-detail">
-          Quantum-correlation analysis in H to WW* to lnu lnu, ML-based event reconstruction,
-          and HGTD software infrastructure for HL-LHC operations.
-        </p> -->
       </div>
     </header>
 
     <main class="content">
       <section class="content-block intro-modern" aria-label="Personal introduction">
         <div class="intro-grid">
-          <div class="intro-copy">
-            <!-- <p class="hero-kicker intro-kicker">Personal Introduction</p> -->
-            <div class="intro-heading-row">
-              <h2 class="section-title intro-title">Yuan-Yen Peng</h2>
-              <img class="intro-atlas-inline" src="./assets/atlas-logo.png" alt="ATLAS collaboration logo" />
-            </div>
-            <p>
-              I am currently serving in Research and Development Substitute Service (RDSS) at National Tsing Hua University,
-              contributing to the ATLAS experiment.
-              I have more than four years of experience in experimental particle physics, with a focus on
-              Higgs physics, quantum-correlation measurements at the LHC, machine-learning-based event reconstruction,
-              and production-database development for the High Granularity Timing Detector (HGTD).
-            </p>
-            <!-- <ul class="list-clean intro-points">
-              <li>Analysis channel: H -> WW* -> lvlv with ATLAS Run 2 and Run 3 data</li>
-              <li>Methods: transformer and flow-based models with physics-constrained architectures</li>
-              <li>Infrastructure: HGTD production database and collaboration analysis support</li>
-            </ul> -->
-          </div>
+         <div class="intro-copy">
+             <div class="intro-heading-row">
+               <h2 class="section-title intro-title">Yuan-Yen Peng</h2>
+               <img class="intro-atlas-inline" src="./assets/atlas-logo.png" alt="ATLAS collaboration logo" />
+             </div>
+             <p>
+               I am currently serving in Research and Development Substitute Service (RDSS) at National Tsing Hua University,
+               contributing to the ATLAS experiment.
+               I have more than four years of experience in experimental particle physics, with a focus on
+               Higgs physics, quantum-correlation measurements at the LHC, machine-learning-based event reconstruction,
+               and production-database development for the High Granularity Timing Detector (HGTD).
+             </p>
+           </div>
+
           <aside class="intro-identity" aria-label="Personal identity">
             <figure class="intro-portrait">
               <img src="./assets/main-figure.JPG" alt="Portrait figure of Yuan-Yen Peng" />
@@ -68,7 +68,7 @@
       <section class="content-block committee-quicklook" aria-label="5 minute committee review">
         <h2 class="section-title">3-Minute with Yuan-Yen</h2>
         <ul class="list-clean">
-          <li><strong>Physics Focus:</strong> Quantum-correlation observables in H -> WW* -> lvlv using Run 2 and Run 3 ATLAS datasets.</li>
+          <li><strong>Physics Focus:</strong> Quantum-correlation observables in $H \to WW^* \to \ell\nu\ell\nu$ using Run 2 and Run 3 ATLAS datasets.</li>
           <li><strong>Technical Depth:</strong> End-to-end ML reconstruction for under-constrained final states with validation-ready model pipelines.</li>
           <li><strong>Collaboration Impact:</strong> ATLAS internal note co-authorship, invited workshop talks, and HGTD software infrastructure delivery.</li>
         </ul>
@@ -82,7 +82,7 @@
       <section class="content-block">
         <h2 class="section-title">Professional Summary</h2>
         <p>
-          My current program combines quantum-correlation measurements in H -> WW* -> lvlv,
+          My current program combines quantum-correlation measurements in $H \to WW^* \to \ell\nu\ell\nu$,
           W-rest-frame reconstruction in under-constrained final states, and software development
           for the ATLAS High Granularity Timing Detector (HGTD). I prioritize reproducibility,
           systematic robustness, and practical integration into collaboration workflows.
@@ -99,7 +99,7 @@
         <article class="program">
           <h3>ML Event Reconstruction</h3>
           <p>
-            Physically informed transformer and flow-based reconstruction for lnu lnu final states.
+            Physically informed transformer and flow-based reconstruction for $H \to WW^* \to \ell\nu\ell\nu$ final states.
           </p>
         </article>
         <article class="program">

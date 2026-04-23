@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
     <meta
       name="description"
       content="Flagship ATLAS analysis, ML reconstruction, and detector software projects by Yuan-Yen Peng."
     />
     <title>Projects | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+      onload="renderMathInElement(document.body, { delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '$', right: '$', display: false }
+      ]});"></script>
   </head>
   <body>
     <header class="masthead masthead-short" aria-label="Projects hero">
@@ -25,25 +35,15 @@
         </div>
       </div>
       <div class="hero-copy wrap-wide">
-        <!-- <p class="hero-kicker">ATLAS Analysis and Engineering</p> -->
         <h1>Projects</h1>
-        <!-- <p class="hero-sub">Physics interpretation, ML reconstruction, and HGTD systems</p> -->
       </div>
     </header>
 
     <main class="content">
-      <!-- <section class="content-block">
-        <h2 class="section-title">Flagship Projects</h2>
-        <p>
-          These projects summarize my full research workflow, from physics motivation and method
-          design to validation strategy and collaboration-level integration.
-        </p>
-      </section> -->
-
       <section class="feature-stack" aria-label="Project stories">
+
         <article class="feature-row feature-row-ml">
           <div class="feature-text">
-            <!-- <p class="feature-tag">Machine Learning Reconstruction</p> -->
             <div class="feature-brandline">
               <figure class="atlas-ml-context">
                 <img src="./assets/atlas-ai.png" alt="ATLAS machine learning logo" /> 
@@ -51,25 +51,24 @@
             </div>
             <p>
               I develop transformer, flow-based, and physics-constrained models to recover missing information
-              in the H -> WW* -> lnu lnu final state, improving key-observable resolution and measurement sensitivity.
+              in the $H \to WW^* \to \ell\nu\ell\nu$ final state, improving key-observable resolution and measurement sensitivity.
             </p>
             <p>
               The pipeline is built for ATLAS analysis adoption (ONNX format), with reproducible training,
               systematic stress tests, and channel-consistent validation.
             </p>
           </div>
-          <figure class="feature-media ml-combined-figure" aria-label="ML reconstruction histograms">
+          <figure class="feature-media media-single media-contained" aria-label="ML reconstruction histograms">
             <img src="./assets/ml.png" alt="Combined ML reconstruction histograms" />
           </figure>
         </article>
 
         <article class="feature-row feature-row-entanglement reverse">
           <div class="feature-text">
-            <!-- <p class="feature-tag">Quantum Interpretation</p> -->
             <h3>Quantum Correlations</h3>
             <p>
               Entanglement in high-energy collisions is a fundamental aspect of quantum theory, yet it remains underexplored.
-              My work is among the first to study quantum correlations in H -> WW* -> lnu lnu.
+              My work is among the first to study quantum correlations in $H \to WW^* \to \ell\nu\ell\nu$.
             </p>
             <p>My main contributions are:</p>
             <ul class="list-clean">
@@ -78,14 +77,15 @@
             </ul>
             <p class="caption-note">
               Entanglement reference:
-              <a
-                href="https://www.newscientist.com/article/2395452-large-hadron-collider-turned-into-worlds-biggest-quantum-experiment/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >New Scientist article</a
-              >.
+               <a
+                 href="https://www.newscientist.com/article/2395452-large-hadron-collider-turned-into-worlds-biggest-quantum-experiment/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 >New Scientist article</a
+               >.
             </p>
           </div>
+
           <div class="feature-media media-single media-contained">
             <img
               src="./assets/quantum-entanglement.png"
@@ -96,7 +96,6 @@
 
         <article class="feature-row feature-row-hgtd">
           <div class="feature-text">
-            <!-- <p class="feature-tag">Detector Software and Infrastructure</p> -->
             <h3>HGTD Production Database</h3>
             <p>
               Co-develop frontend and backend components for HGTD production-database webpage,
@@ -117,7 +116,7 @@
           <div class="feature-text">
             <h3>Run3 HWW Coupling</h3>
             <p>
-              Co-mentor two MSc students and jointly study electroweak couplings in H to WW* with Run 3 data, providing analysis guidance.
+              Co-mentor two MSc students and jointly study electroweak couplings in $H \to WW^*$ with Run 3 data, providing analysis guidance.
               In parallel, I contribute portable analysis environments and workflow tooling that reduce setup friction across collaborators.
             </p>
           </div>
