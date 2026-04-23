@@ -38,6 +38,15 @@ Update page content directly in the HTML files above, including:
 
 If you add new media, place files in `assets/` and reference them with relative paths (for example `./assets/your-image.png`).
 
+## Continuous Integration
+
+Every push to this repository (including commits from the GitHub Copilot coding agent) automatically runs the **Security & Visibility Check** workflow (`.github/workflows/security-check.yml`), which:
+
+- **Secret scan** — runs [Gitleaks](https://github.com/gitleaks/gitleaks) to detect accidentally committed secrets or credentials.
+- **Visibility check** — verifies that the repository remains public.
+
+No manual steps are required; the checks run on every `push` event.
+
 ## Deploy with GitHub Pages
 
 This repository is a plain static site and can be deployed from the root folder.
