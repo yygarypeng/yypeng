@@ -171,7 +171,7 @@ a {
   background: transparent;
   border: 0;
   border-top: 1px solid rgba(91, 111, 130, 0.22);
-  padding: 2.5rem 0.2rem 1.5rem;
+  padding: 3rem 0.2rem;
   margin: 2rem 0 0;
   border-radius: 0;
   box-shadow: none;
@@ -201,7 +201,7 @@ a {
 .intro-modern {
   background: transparent;
   border-top: 0;
-  padding: 2.5rem 0.2rem 1.5rem;
+  padding: 3rem 0.2rem;
   margin: 2rem 0 0;
 }
 
@@ -287,14 +287,14 @@ a {
 .committee-quicklook {
   border-top: 3px solid var(--accent);
   background: transparent;
-  padding: 2.5rem 0.2rem 1.5rem;
+  padding: 3rem 0.2rem;
   margin: 2rem 0 0;
   border-radius: 0;
   box-shadow: none;
 }
 
 .section-title {
-  margin: 0 0 1rem;
+  margin: 0 0 2rem;
   font-size: 1.75rem;
   line-height: 1.2;
   letter-spacing: 0.01em;
@@ -369,6 +369,16 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.4rem;
   align-items: stretch;
+  border-top: 1px solid rgba(91, 111, 130, 0.22);
+  padding-top: 4rem;
+  margin: 2rem 0 0;
+}
+
+.split-2 .content-block {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .feature-stack {
@@ -382,7 +392,7 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2rem;
   align-items: stretch;
-  padding: 2.5rem 0.2rem 1.5rem;
+  padding: 3rem 0.2rem;
   border: 0;
   border-top: 1px solid rgba(91, 111, 130, 0.22);
 }
@@ -633,7 +643,7 @@ footer {
 
   .feature-row {
     gap: 2rem;
-    padding: 2.5rem 0.2rem 1.5rem;
+    padding: 3rem 0.2rem;
   }
 
   .hero-copy {
@@ -642,15 +652,15 @@ footer {
   }
 
   .intro-modern {
-    padding: 2.5rem 0.2rem 1.5rem;
+    padding: 3rem 0.2rem;
   }
 
   .committee-quicklook {
-    padding: 2.5rem 0.2rem 1.5rem;
+    padding: 3rem 0.2rem;
   }
 
   .content-block {
-    padding: 2.5rem 0.2rem 1.5rem;
+    padding: 3rem 0.2rem;
   }
 
   .intro-grid {
