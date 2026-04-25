@@ -8,8 +8,10 @@
       name="description"
       content="Scientific outputs, talks, and technical highlights from ATLAS research by Yuan-Yen Peng."
     />
+    <meta name="theme-color" content="#001f3f" />
     <title>Outputs | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
@@ -21,11 +23,14 @@
       ]});"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="masthead masthead-short" aria-label="Outputs hero">
       <div class="topbar">
-         <div class="topbar-inner wrap-wide">
-           <nav class="menu" aria-label="Main navigation">
-
+        <div class="topbar-inner wrap-wide">
+          <div class="site-mark" aria-label="Site identity">
+            <a class="site-name" href="./index.html">Yuan-Yen</a>
+          </div>
+          <nav class="menu" aria-label="Main navigation">
             <a href="./index.html">Home</a>
             <a href="./research.html">Research</a>
             <a href="./projects.html">Projects</a>
@@ -39,20 +44,22 @@
       </div>
     </header>
 
-    <main class="content">
+    <main id="main-content" class="content">
       <section class="content-block committee-quicklook" aria-label="evidence summary">
-        <h2 class="section-title">Evidence Summary</h2>
+        <p class="section-kicker">Verifiable Evidence</p>
+        <h2 class="section-title">Work a committee can check</h2>
         <ul class="list-clean">
-          <li><strong>Thesis:</strong> Quantum Entanglement Measurements in $H \to WW^* \to \ell\nu\ell\nu$ with the ATLAS detector.</li>
-          <li><strong>Collaboration Output:</strong> Co-author of ATLAS internal note ANA-HIGP-2024-27-INT1.</li>
-          <li><strong>Presentations:</strong> ATLAS NRML Workshop 2025 and ATLAS Collaboration Week 2024 talks.</li>
-          <li><strong>Engineering:</strong> Public code and collaboration software across GitHub, CERN GitLab, and Docker Hub.</li>
+          <li><strong>Thesis:</strong> Quantum entanglement measurements in $H \to WW^* \to \ell\nu\ell\nu$ with the ATLAS detector.</li>
+          <li><strong>ATLAS output:</strong> Co-author of internal note ANA-HIGP-2024-27-INT1.</li>
+          <li><strong>Presentations:</strong> ATLAS NRML Workshop 2025, ATLAS Collaboration Week 2024, and related workshop talks.</li>
+          <li><strong>Engineering:</strong> Analysis and detector-software contributions across GitHub, CERN GitLab, and Docker Hub.</li>
         </ul>
       </section>
 
       <section class="split-2">
         <article class="content-block">
-          <h2 class="section-title">Thesis and Notes</h2>
+          <p class="section-kicker">Primary Evidence</p>
+          <h2 class="section-title">Thesis and ATLAS notes</h2>
           <ul class="list-clean">
             <li>
               MSc thesis:
@@ -71,7 +78,8 @@
         </article>
 
         <article class="content-block">
-          <h2 class="section-title">Talk Highlights</h2>
+          <p class="section-kicker">Presentations</p>
+          <h2 class="section-title">Research talks</h2>
           <ul class="list-clean">
             <li>
               ATLAS NRML Workshop 2025:
@@ -94,7 +102,8 @@
       </section>
 
       <section class="content-block">
-        <h2 class="section-title">Honors and Skills</h2>
+        <p class="section-kicker">Recognition</p>
+        <h2 class="section-title">Honors and technical footprint</h2>
         <ul class="list-clean">
           <li>Phi Tau Phi Scholastic Honor Society (2025)</li>
           <li>College of Science Elite Student Award (2025)</li>
@@ -105,6 +114,21 @@
       </section>
     </main>
 
-    <footer>Last updated: April 2026. ATLAS experimental physics and detector R&D.</footer>
+    <footer class="site-footer">
+      <div class="footer-meta">
+        <span>Last updated: April 2026. Affiliated and collaborating institutions:</span>
+        <span class="organization-logos" aria-label="Affiliated and collaborating institutions">
+          <span class="organization-item">
+            <img src="./assets/nthu-logo.png" alt="National Tsing Hua University logo" width="1920" height="1921" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/as-logo.png" alt="Academia Sinica logo" width="1920" height="1920" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/cern-logo.png" alt="CERN logo" width="1182" height="1182" />
+          </span>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>

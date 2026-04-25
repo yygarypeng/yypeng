@@ -6,10 +6,12 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
     <meta
       name="description"
-      content="Yuan-Yen Peng - ATLAS experimental physics, machine learning reconstruction, and HGTD detector software."
+      content="Yuan-Yen Peng - ATLAS Higgs physics, machine-learning reconstruction, and HGTD detector software."
     />
+    <meta name="theme-color" content="#001f3f" />
     <title>Yuan-Yen Peng | ATLAS Experimental Physics</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
@@ -21,11 +23,14 @@
       ]});"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="masthead" aria-label="Site hero">
       <div class="topbar">
-         <div class="topbar-inner wrap-wide">
-           <nav class="menu" aria-label="Main navigation">
-
+        <div class="topbar-inner wrap-wide">
+          <div class="site-mark" aria-label="Site identity">
+            <a class="site-name" href="./index.html">Yuan-Yen</a>
+          </div>
+          <nav class="menu" aria-label="Main navigation">
             <a class="active" href="./index.html">Home</a>
             <a href="./research.html">Research</a>
             <a href="./projects.html">Projects</a>
@@ -36,42 +41,70 @@
       </div>
       <div class="hero-copy wrap-wide">
         <h1>Yuan-Yen Peng</h1>
-        <p class="hero-sub">Collider Physics & Machine Learning</p>
+        <p class="hero-sub">ATLAS Higgs Physics &amp; ML Reconstruction</p>
       </div>
     </header>
 
-    <main class="content">
+    <main id="main-content" class="content">
       <section class="content-block intro-modern" aria-label="Personal introduction">
         <div class="intro-grid">
-         <div class="intro-copy">
-             <div class="intro-heading-row">
-               <h2 class="section-title intro-title">Yuan-Yen Peng</h2>
-               <img class="intro-atlas-inline" src="./assets/atlas-logo.png" alt="ATLAS collaboration logo" />
-             </div>
-             <p>
-               I am currently serving in Research and Development Substitute Service (RDSS) at National Tsing Hua University,
-               contributing to the ATLAS experiment.
-               I have more than four years of experience in experimental particle physics, with a focus on
-               Higgs physics, quantum-correlation measurements at the LHC, machine-learning-based event reconstruction,
-               and production-database development for the High Granularity Timing Detector (HGTD).
-             </p>
-           </div>
+          <div class="intro-copy">
+            <div class="intro-heading-row">
+              <div>
+                <p class="section-kicker">Research Focus</p>
+                <h2 class="section-title intro-title">Recovering hidden information in Higgs events</h2>
+                <div class="affiliation-strip" aria-label="Research affiliation">
+                  <img src="./assets/atlas-logo.png" alt="ATLAS collaboration logo" width="1915" height="796" />
+                  <div class="affiliation-copy">
+                    <strong>ATLAS Collaboration</strong>
+                    <span>Higgs physics &middot; ML reconstruction &middot; detector software</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>
+              My research focuses on recovering physics information in Higgs final states with missing neutrinos,
+              especially $H \to WW^* \to \ell\nu\ell\nu$. The scientific goal is to turn under-constrained events into
+              observables that can test quantum correlations, polarization structure, and electroweak dynamics.
+            </p>
+            <p>
+              I build reconstruction methods with collaboration review in mind: physics-motivated constraints,
+              stress tests against failure modes, reproducible training pipelines, and outputs that other ATLAS
+              collaborators can inspect and reuse.
+            </p>
+          </div>
 
           <aside class="intro-identity" aria-label="Personal identity">
             <figure class="intro-portrait">
-              <img src="./assets/main-figure.JPG" alt="Portrait figure of Yuan-Yen Peng" />
+              <img src="./assets/main-figure.JPG" alt="Portrait figure of Yuan-Yen Peng" width="1096" height="1099" />
             </figure>
           </aside>
         </div>
       </section>
 
+      <section class="content-block research-thesis" aria-label="Research thesis">
+        <p class="section-kicker">Research Thesis</p>
+        <h2 class="section-title">A measurement problem first</h2>
+        <p>
+          The central problem is not simply to make a neural network predict better. It is to recover interpretable
+          rest-frame information from incomplete collider events, validate it against physics expectations, and make
+          the method credible enough for an ATLAS analysis environment.
+        </p>
+      </section>
+
       <section class="content-block committee-quicklook" aria-label="5 minute committee review">
-        <h2 class="section-title">3-Minute with Yuan-Yen</h2>
-        <ul class="list-clean">
-          <li><strong>Physics Focus:</strong> Quantum-correlation observables in $H \to WW^* \to \ell\nu\ell\nu$ using Run 2 and Run 3 ATLAS datasets.</li>
-          <li><strong>Technical Depth:</strong> End-to-end ML reconstruction for under-constrained final states with validation-ready model pipelines.</li>
-          <li><strong>Collaboration Impact:</strong> ATLAS internal note co-authorship, invited workshop talks, and HGTD software infrastructure delivery.</li>
-        </ul>
+        <p class="section-kicker">At a Glance</p>
+        <h2 class="section-title">A coherent physics and software arc</h2>
+        <div class="two-column-list">
+          <ul class="list-clean">
+            <li><strong>Question:</strong> What quantum-correlation and polarization information remains measurable when two neutrinos are unobserved?</li>
+            <li><strong>Method:</strong> Physics-informed ML reconstruction for $H \to WW^* \to \ell\nu\ell\nu$, built for validation rather than black-box optimization.</li>
+          </ul>
+          <ul class="list-clean">
+            <li><strong>Evidence:</strong> MSc thesis, ATLAS internal note co-authorship, workshop presentations, and Run 3 analysis mentoring.</li>
+            <li><strong>Infrastructure:</strong> HGTD production-database software and reproducible analysis tooling for collaboration workflows.</li>
+          </ul>
+        </div>
         <div class="button-row">
           <a href="./assets/cv.pdf" target="_blank">Curriculum Vitae</a>
           <a href="./outputs.html">Open Evidence Pack</a>
@@ -80,39 +113,45 @@
         </div>
       </section>
 
-      <section class="content-block">
-        <h2 class="section-title">Professional Summary</h2>
-        <p>
-          My current program combines quantum-correlation measurements in $H \to WW^* \to \ell\nu\ell\nu$,
-          W-rest-frame reconstruction in under-constrained final states, and software development
-          for the ATLAS High Granularity Timing Detector (HGTD). I prioritize reproducibility,
-          systematic robustness, and practical integration into collaboration workflows.
-        </p>
+      <section class="content-block" aria-label="Selected evidence">
+        <p class="section-kicker">Selected Evidence</p>
+        <h2 class="section-title">Signals a committee can verify</h2>
+        <ul class="list-clean evidence-list">
+          <li><strong>MSc thesis:</strong> Quantum entanglement measurements in $H \to WW^* \to \ell\nu\ell\nu$ with the ATLAS detector.</li>
+          <li><strong>ATLAS internal note:</strong> Co-author of ANA-HIGP-2024-27-INT1 on ML-based reconstruction and W-polarization interpretation.</li>
+          <li><strong>Presentations:</strong> Reconstruction and quantum-correlation work presented at ATLAS workshops and Collaboration Week.</li>
+          <li><strong>Software:</strong> HGTD production-database contributions and reproducible ATLAS analysis environments.</li>
+        </ul>
       </section>
 
-      <section class="program-grid" aria-label="Flagship programs">
-        <article class="program">
-          <h3>Quantum-Correlation Measurement</h3>
-          <p>
-            Precision-motivated observables in Higgs decays with Run 2 and Run 3 ATLAS data.
-          </p>
-        </article>
-        <article class="program">
-          <h3>ML Event Reconstruction</h3>
-          <p>
-            Physically informed transformer and flow-based reconstruction for $H \to WW^* \to \ell\nu\ell\nu$ final states.
-          </p>
-        </article>
-        <article class="program">
-          <h3>HGTD Software Infrastructure</h3>
-          <p>
-            Frontend and backend systems for detector production data management and visualization.
-          </p>
-        </article>
+      <section class="content-block" aria-label="Flagship programs">
+        <p class="section-kicker">Core Programs</p>
+        <h2 class="section-title">From physics question to collaboration tool</h2>
+        <div class="program-grid">
+          <article class="program">
+            <h3>Quantum-Correlation Measurement</h3>
+            <p>
+              Density-matrix and polarization-sensitive observables in Higgs decays where missing neutrinos obscure the final-state geometry.
+            </p>
+          </article>
+          <article class="program">
+            <h3>ML Event Reconstruction</h3>
+            <p>
+              Transformer and flow-based reconstruction pipelines constrained by physics expectations and systematic validation.
+            </p>
+          </article>
+          <article class="program">
+            <h3>HGTD Software Infrastructure</h3>
+            <p>
+              Collaboration-facing database tools for detector production data, quality checks, and visualization.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="content-block">
-        <h2 class="section-title">Navigation for Fast Evaluation</h2>
+        <p class="section-kicker">Fast Review</p>
+        <h2 class="section-title">Navigation for fast evaluation</h2>
         <div class="button-row button-row-eval">
           <a href="./research.html">Research Programs</a>
           <a href="./projects.html">Project Portfolio</a>
@@ -122,6 +161,21 @@
       </section>
     </main>
 
-    <footer>Last updated: April 2026. ATLAS experimental physics and detector R&D.</footer>
+    <footer class="site-footer">
+      <div class="footer-meta">
+        <span>Last updated: April 2026. Affiliated and collaborating institutions:</span>
+        <span class="organization-logos" aria-label="Affiliated and collaborating institutions">
+          <span class="organization-item">
+            <img src="./assets/nthu-logo.png" alt="National Tsing Hua University logo" width="1920" height="1921" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/as-logo.png" alt="Academia Sinica logo" width="1920" height="1920" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/cern-logo.png" alt="CERN logo" width="1182" height="1182" />
+          </span>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>

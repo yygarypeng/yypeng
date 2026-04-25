@@ -8,8 +8,10 @@
       name="description"
       content="Contact and collaboration links for Yuan-Yen Peng."
     />
+    <meta name="theme-color" content="#001f3f" />
     <title>Contact | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
@@ -21,11 +23,14 @@
       ]});"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="masthead masthead-short" aria-label="Contact hero">
       <div class="topbar">
-         <div class="topbar-inner wrap-wide">
-           <nav class="menu" aria-label="Main navigation">
-
+        <div class="topbar-inner wrap-wide">
+          <div class="site-mark" aria-label="Site identity">
+            <a class="site-name" href="./index.html">Yuan-Yen</a>
+          </div>
+          <nav class="menu" aria-label="Main navigation">
             <a href="./index.html">Home</a>
             <a href="./research.html">Research</a>
             <a href="./projects.html">Projects</a>
@@ -39,34 +44,54 @@
       </div>
     </header>
 
-<main class="content">
-  <section class="content-block">
-    <div class="split-2">
-      <div>
-        <h2 class="section-title">Profiles</h2>
-        <ul class="list-clean">
-          <li>Email: <a href="mailto:yuan-yen.peng@cern.ch">yuan-yen.peng@cern.ch</a></li>
-          <li>GitHub: <a href="https://github.com/yygarypeng">@yygarypeng</a></li>
-          <li>CERN GitLab: <a href="https://gitlab.cern.ch/ypeng">@ypeng</a></li>
-          <li>Docker Hub: <a href="https://hub.docker.com/repositories/yygarypeng">@yygarypeng</a></li>
-        </ul>
-      </div>
+    <main id="main-content" class="content">
+      <section class="content-block">
+        <div class="split-2">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 class="section-title">Contact and research profiles</h2>
+            <p>
+              For ATLAS or research-related correspondence, CERN email is preferred.
+            </p>
+            <ul class="list-clean">
+              <li>Email: <a href="mailto:yuan-yen.peng@cern.ch">yuan-yen.peng@cern.ch</a></li>
+              <li>GitHub: <a href="https://github.com/yygarypeng">@yygarypeng</a></li>
+              <li>CERN GitLab: <a href="https://gitlab.cern.ch/ypeng">@ypeng</a></li>
+              <li>Docker Hub: <a href="https://hub.docker.com/repositories/yygarypeng">@yygarypeng</a></li>
+            </ul>
+          </div>
 
-      <div>
-        <h2 class="section-title">Availability</h2>
-        <ul class="list-clean">
-          <li><strong>Location:</strong> Hsinchu, Taiwan</li>
-          <li><strong>Preferred:</strong> CERN email/GitLab for ATLAS/collaboration</li>
-        </ul>
-        <div class="button-row">
-          <a href="./research.html">Research Programs</a>
-          <a href="./projects.html">Project Portfolio</a>
+          <div>
+            <p class="section-kicker">Scheduling</p>
+            <h2 class="section-title">Availability</h2>
+            <ul class="list-clean">
+              <li><strong>Location:</strong> Hsinchu, Taiwan</li>
+              <li><strong>Preferred:</strong> CERN email/GitLab for ATLAS and collaboration work</li>
+            </ul>
+            <div class="button-row">
+              <a href="./research.html">Research Programs</a>
+              <a href="./projects.html">Project Portfolio</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-</main>
+      </section>
+    </main>
 
-    <footer>Last updated: April 2026. ATLAS experimental physics and detector R&D.</footer>
+    <footer class="site-footer">
+      <div class="footer-meta">
+        <span>Last updated: April 2026. Affiliated and collaborating institutions:</span>
+        <span class="organization-logos" aria-label="Affiliated and collaborating institutions">
+          <span class="organization-item">
+            <img src="./assets/nthu-logo.png" alt="National Tsing Hua University logo" width="1920" height="1921" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/as-logo.png" alt="Academia Sinica logo" width="1920" height="1920" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/cern-logo.png" alt="CERN logo" width="1182" height="1182" />
+          </span>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>

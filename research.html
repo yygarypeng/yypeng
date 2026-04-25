@@ -8,8 +8,10 @@
       name="description"
       content="Research programs in ATLAS Higgs physics, reconstruction, and precision inference by Yuan-Yen Peng."
     />
+    <meta name="theme-color" content="#001f3f" />
     <title>Research | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
@@ -21,11 +23,14 @@
       ]});"></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="masthead masthead-short" aria-label="Research hero">
       <div class="topbar">
-         <div class="topbar-inner wrap-wide">
-           <nav class="menu" aria-label="Main navigation">
-
+        <div class="topbar-inner wrap-wide">
+          <div class="site-mark" aria-label="Site identity">
+            <a class="site-name" href="./index.html">Yuan-Yen</a>
+          </div>
+          <nav class="menu" aria-label="Main navigation">
             <a href="./index.html">Home</a>
             <a class="active" href="./research.html">Research</a>
             <a href="./projects.html">Projects</a>
@@ -39,38 +44,72 @@
       </div>
     </header>
 
-    <main class="content">
-      <section class="content-block">
+    <main id="main-content" class="content">
+      <section class="content-block research-thesis">
+        <p class="section-kicker">Research Direction</p>
+        <h2 class="section-title">Recovering rest-frame information from missing-neutrino events</h2>
         <p>
-          My research program focuses on extracting robust physics measurements from challenging collider topologies.
-          In parallel, I develop software and analysis infrastructure that improves reproducibility
-          and workflow efficiency in large collaborations.
+          My research starts from a measurement challenge in $H \to WW^* \to \ell\nu\ell\nu$: the final state carries
+          quantum-correlation and polarization information, but two neutrinos leave the event kinematics under-constrained.
+          I study how much of that hidden structure can be reconstructed in a way that remains physically interpretable.
+        </p>
+      </section>
+
+      <section class="content-block">
+        <p class="section-kicker">Scientific Problem</p>
+        <h2 class="section-title">Incomplete events, testable observables</h2>
+        <p>
+          The common thread is to turn incomplete detector-level information into observables that can be validated,
+          interpreted, and reviewed inside ATLAS. This requires reconstruction models that respect physics constraints,
+          not just models that optimize a loss function on simulated truth labels.
         </p>
       </section>
 
       <section class="split-2">
         <article class="content-block">
-          <h2 class="section-title">Core Themes</h2>
+          <p class="section-kicker">Physics</p>
+          <h2 class="section-title">Physics questions</h2>
           <ul class="list-clean">
-            <li>Quantum-correlation measurements in $H \to WW^* \to \ell\nu\ell\nu$</li>
-            <li>W rest-frame reconstruction in under-constrained final states</li>
-            <li>Physics-constrained transformer and flow-based models for event inference</li>
-            <li>Higgs and electroweak coupling studies</li>
-            <li>HGTD production-database platform development</li>
+            <li>What quantum-correlation information is still measurable in $H \to WW^* \to \ell\nu\ell\nu$?</li>
+            <li>How much W-rest-frame information can be recovered when two neutrinos are unobserved?</li>
+            <li>Which observables remain stable under realistic detector effects and systematic checks?</li>
+            <li>How can reconstruction tools be packaged so collaborators can inspect, reproduce, and reuse them?</li>
           </ul>
         </article>
 
         <article class="content-block">
-          <h2 class="section-title">Technical Stack</h2>
+          <p class="section-kicker">Methods</p>
+          <h2 class="section-title">Methods and tools</h2>
           <ul class="list-clean">
-            <li>ML: PyTorch/Lightning, FrEIA, ONNX, TensorFlow/Keras</li>
-            <li>HEP: ROOT, FastFrames, uproot, mplhep</li>
-            <li>Systems: Python, C++, UNIX, Git, Docker/Podman, CVMFS</li>
+            <li>Reconstruction: transformers, normalizing flows, physics-constrained regression, ONNX export</li>
+            <li>HEP analysis: ROOT, FastFrames, uproot, mplhep</li>
+            <li>Collaboration software: Python, C++, UNIX, Git, Docker/Podman, CVMFS</li>
           </ul>
         </article>
       </section>
 
       <section class="content-block">
+        <p class="section-kicker">Validation Practice</p>
+        <h2 class="section-title">Useful only if it survives review</h2>
+        <p>
+          I prioritize reconstruction methods that remain interpretable, stress-tested, and usable in ATLAS review
+          workflows. That means comparing outputs with physics expectations, documenting failure modes, preserving
+          reproducibility, and keeping the analysis interface practical for collaborators.
+        </p>
+      </section>
+
+      <section class="content-block">
+        <p class="section-kicker">Future Direction</p>
+        <h2 class="section-title">From one difficult channel to reusable inference tools</h2>
+        <p>
+          The broader goal is to develop reconstruction and validation strategies that can transfer across final states
+          with missing particles, detector limitations, or ambiguous object assignments. Higgs measurements provide the
+          immediate physics target; reusable collaboration-ready inference tools provide the longer-term contribution.
+        </p>
+      </section>
+
+      <section class="content-block">
+        <p class="section-kicker">Fast Review</p>
         <h2 class="section-title">Continue</h2>
         <div class="button-row">
           <a href="./projects.html">Project Portfolio</a>
@@ -79,6 +118,21 @@
       </section>
     </main>
 
-    <footer>Last updated: April 2026. ATLAS experimental physics and detector R&D.</footer>
+    <footer class="site-footer">
+      <div class="footer-meta">
+        <span>Last updated: April 2026. Affiliated and collaborating institutions:</span>
+        <span class="organization-logos" aria-label="Affiliated and collaborating institutions">
+          <span class="organization-item">
+            <img src="./assets/nthu-logo.png" alt="National Tsing Hua University logo" width="1920" height="1921" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/as-logo.png" alt="Academia Sinica logo" width="1920" height="1920" />
+          </span>
+          <span class="organization-item">
+            <img src="./assets/cern-logo.png" alt="CERN logo" width="1182" height="1182" />
+          </span>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
