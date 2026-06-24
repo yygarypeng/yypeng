@@ -6,10 +6,10 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
     <meta
       name="description"
-      content="Research programs in ATLAS Higgs physics, reconstruction, and precision inference by Yuan-Yen Peng."
+      content="Research interests in ATLAS Higgs physics, Standard Model measurements, BSM searches, machine-learning reconstruction, and real-time ML by Yuan-Yen Peng."
     />
     <meta name="theme-color" content="#001f3f" />
-    <title>Research | Yuan-Yen Peng</title>
+    <title>Interest | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
@@ -24,7 +24,7 @@
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <header class="masthead masthead-short" aria-label="Research hero">
+    <header class="masthead masthead-short" aria-label="Interest hero">
       <div class="topbar">
         <div class="topbar-inner wrap-wide">
           <div class="site-mark" aria-label="Site identity">
@@ -32,7 +32,7 @@
           </div>
           <nav class="menu" aria-label="Main navigation">
             <a href="./index.html">Home</a>
-            <a class="active" href="./research.html">Research</a>
+            <a class="active" href="./interest.html">Interest</a>
             <a href="./projects.html">Projects</a>
             <a href="./outputs.html">Outputs</a>
             <a href="./contact.html">Contact</a>
@@ -40,80 +40,83 @@
         </div>
       </div>
       <div class="hero-copy wrap-wide">
-        <h1>Research</h1>
+        <h1>Interest</h1>
       </div>
     </header>
 
     <main id="main-content" class="content">
       <section class="content-block research-thesis">
-        <p class="section-kicker">Research Direction</p>
-        <h2 class="section-title">Recovering rest-frame information from missing-neutrino events</h2>
+        <h2 class="section-title">From HWW reconstruction to measurable quantum information</h2>
         <p>
-          My research starts from a measurement challenge in $H \to WW^* \to \ell\nu\ell\nu$: the final state carries
-          quantum-correlation and polarization information, but two neutrinos leave the event kinematics under-constrained.
-          I study how much of that hidden structure can be reconstructed in a way that remains physically interpretable.
-        </p>
-      </section>
-
-      <section class="content-block">
-        <p class="section-kicker">Scientific Problem</p>
-        <h2 class="section-title">Incomplete events, testable observables</h2>
-        <p>
-          The common thread is to turn incomplete detector-level information into observables that can be validated,
-          interpreted, and reviewed inside ATLAS. This requires reconstruction models that respect physics constraints,
-          not just models that optimize a loss function on simulated truth labels.
+          My current work starts from $H \to WW^* \to \ell\nu\ell\nu$, where spin correlations,
+          quantum-entanglement observables, and W-polarization information are encoded in a final state with two
+          unobserved neutrinos. I have worked on W-rest-frame reconstruction and ML-based recovery of missing information
+          for this topology, with the goal of turning an under-constrained final state into observables that can survive
+          detector effects, systematic checks, and ATLAS review.
+          These directions grow out of my MSc thesis, ATLAS note work, Run 3 HWW analysis participation, and software
+          contributions for ATLAS-facing workflows.
         </p>
       </section>
 
       <section class="split-2">
         <article class="content-block">
-          <p class="section-kicker">Physics</p>
-          <h2 class="section-title">Physics questions</h2>
-          <ul class="list-clean">
-            <li>What quantum-correlation information is still measurable in $H \to WW^* \to \ell\nu\ell\nu$?</li>
-            <li>How much W-rest-frame information can be recovered when two neutrinos are unobserved?</li>
-            <li>Which observables remain stable under realistic detector effects and systematic checks?</li>
-            <li>How can reconstruction tools be packaged so collaborators can inspect, reproduce, and reuse them?</li>
-          </ul>
+          <h2 class="section-title">Precision measurements in search-inspired phase spaces</h2>
+          <p>
+            My HWW work has trained me to think about missing information, background control, and validation against
+            physics observables. I want to extend that experience to precision Standard Model measurements in
+            search-inspired phase spaces, including $WW$, $WZ$, polarization-sensitive diboson channels, and differential
+            observables that improve both SM interpretation and future BSM sensitivity.
+          </p>
         </article>
 
         <article class="content-block">
-          <p class="section-kicker">Methods</p>
-          <h2 class="section-title">Methods and tools</h2>
-          <ul class="list-clean">
-            <li>Reconstruction: transformers, normalizing flows, physics-constrained regression, ONNX export</li>
-            <li>HEP analysis: ROOT, FastFrames, uproot, mplhep</li>
-            <li>Collaboration software: Python, C++, UNIX, Git, Docker/Podman, CVMFS</li>
-          </ul>
+          <h2 class="section-title">ML reconstruction for missing information</h2>
+          <p>
+            My recent work uses attention-based, invertible, and physics-constrained models to recover missing rest-frame
+            information. The next step is not only better prediction, but better evidence: models validated against
+            physics observables, stress-tested under systematic variations, compared to conventional reconstruction, and
+            exported into reproducible workflows that can be inspected by an analysis team.
+          </p>
+        </article>
+      </section>
+
+      <section class="split-2">
+        <article class="content-block">
+          <h2 class="section-title">New-physics searches with missing information</h2>
+          <p>
+            The same reconstruction problem appears in compressed spectra, SUSY-inspired scenarios, dark-matter-motivated
+            signatures, feebly interacting particles, and other missing-energy final states. I would like to test how
+            methods developed in a controlled HWW measurement can transfer to searches where ambiguity, limited statistics,
+            and background modeling are central challenges.
+          </p>
+        </article>
+
+        <article class="content-block">
+          <h2 class="section-title">Deployable ML and real-time analysis</h2>
+          <p>
+            I also want to push reconstruction methods closer to deployment: ONNX or similar export paths, low-latency
+            inference, trigger-aware reconstruction, online monitoring, and real-time analysis constraints. This direction
+            connects offline ML ideas to Run 3 and HL-LHC environments where physics performance, reliability, and
+            maintainability must be optimized together.
+          </p>
         </article>
       </section>
 
       <section class="content-block">
-        <p class="section-kicker">Validation Practice</p>
-        <h2 class="section-title">Useful only if it survives review</h2>
+        <h2 class="section-title">Analysis infrastructure and collaboration tools</h2>
         <p>
-          I prioritize reconstruction methods that remain interpretable, stress-tested, and usable in ATLAS review
-          workflows. That means comparing outputs with physics expectations, documenting failure modes, preserving
-          reproducibility, and keeping the analysis interface practical for collaborators.
+          Across these interests, I value software that makes physics work easier to review and reproduce. My experience
+          includes ROOT and FastFrames workflows, Python analysis tooling, containerized environments, CernVM-FS access,
+          HGTD database work, local computing support, and collaboration-facing interfaces. I want to contribute not only
+          to physics results, but also to the infrastructure that lets a group do careful analyses faster.
         </p>
       </section>
 
       <section class="content-block">
-        <p class="section-kicker">Future Direction</p>
-        <h2 class="section-title">From one difficult channel to reusable inference tools</h2>
-        <p>
-          The broader goal is to develop reconstruction and validation strategies that can transfer across final states
-          with missing particles, detector limitations, or ambiguous object assignments. Higgs measurements provide the
-          immediate physics target; reusable collaboration-ready inference tools provide the longer-term contribution.
-        </p>
-      </section>
-
-      <section class="content-block">
-        <p class="section-kicker">Fast Review</p>
         <h2 class="section-title">Continue</h2>
         <div class="button-row">
-          <a href="./projects.html">Project Portfolio</a>
-          <a href="./outputs.html">Results and Talks</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./outputs.html">Outputs</a>
         </div>
       </section>
     </main>

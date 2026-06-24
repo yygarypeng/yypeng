@@ -325,6 +325,7 @@ a:focus-visible {
 
 .intro-identity {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -349,6 +350,30 @@ a:focus-visible {
   padding: 0;
 }
 
+.intro-portrait a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.atlas-seal {
+  display: inline-block;
+  margin-top: 0.9rem;
+  text-decoration: none;
+}
+
+.atlas-seal img {
+  display: block;
+  width: 150px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.atlas-seal:hover img,
+.atlas-seal:focus-visible img {
+  opacity: 1;
+}
+
 /* Content */
 
 .content-block p {
@@ -363,24 +388,7 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
-.section-kicker {
-  margin: 0 0 0.65rem;
-  color: var(--accent);
-  font-family: var(--font-display);
-  font-size: 0.76rem;
-  font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  line-height: 1.3;
-  text-transform: uppercase;
-}
-
-.content-block .section-kicker,
-.feature-row .section-kicker {
-  color: var(--accent);
-}
-
-.committee-quicklook {
+.research-snapshot {
   border-top-color: var(--accent);
   border-top-width: 2px;
   background: var(--surface);
@@ -388,11 +396,11 @@ a:focus-visible {
   box-shadow: none;
 }
 
-.committee-quicklook .list-clean {
+.research-snapshot .list-clean {
   max-width: 76ch;
 }
 
-.committee-quicklook .list-clean li {
+.research-snapshot .list-clean li {
   margin: 0.72rem 0;
 }
 
@@ -404,7 +412,7 @@ a:focus-visible {
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  max-width: 24ch;
+  max-width: 34ch;
   text-wrap: balance;
 }
 
@@ -414,7 +422,7 @@ a:focus-visible {
 
 .program-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.3rem, 2.8vw, 2rem);
   margin: 0;
 }
@@ -562,7 +570,10 @@ a:focus-visible {
   max-width: var(--measure);
 }
 
-.feature-text p:first-of-type,
+.feature-text h3 + p {
+  margin-top: 1.2rem;
+}
+
 .split-2 .feature-text p:first-of-type,
 .content-block p:first-of-type {
   margin-top: 0;

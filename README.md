@@ -1,13 +1,13 @@
 # Yuan-Yen Peng Portfolio Website
 
-Static multi-page research portfolio for physics PhD applications and ATLAS-facing review. The site presents one coherent arc: ATLAS Higgs measurements with missing neutrinos, ML-based event reconstruction, validation for collaboration workflows, and HGTD detector-software infrastructure.
+Static multi-page research portfolio for physics PhD applications and ATLAS-facing review. The site presents one coherent arc: ATLAS HWW physics with missing neutrinos, ML-based reconstruction of hidden rest-frame information, validation for quantum-information and precision-measurement observables, and reproducible analysis infrastructure.
 
 ## Site Structure
 
-- `index.html` — research-focus homepage, committee snapshot, evidence links, and core program summary
-- `research.html` — scientific arc from missing-neutrino reconstruction to reusable inference tools
-- `projects.html` — project stories ordered from physics motivation to reconstruction, detector software, and Run 3 analysis support
-- `outputs.html` — verifiable evidence: thesis, ATLAS note, presentations, honors, and technical footprint
+- `index.html` — concise homepage for the research arc, current work, and connected contributions
+- `interest.html` — research directions from HWW quantum information to precision measurements, BSM searches, deployable ML, and analysis infrastructure
+- `projects.html` — project stories ordered from HWW physics to ML reconstruction, Run 3 analysis, detector software, and computing support
+- `outputs.html` — verifiable evidence: thesis, ATLAS note, talks, ATLAS participation, software/computing, honors, and skills
 - `contact.html` — CERN email, research profiles, and availability
 - `styles.css` — shared design tokens, typography, layout sections, responsive rules, focus states, and footer/logo treatment
 - `assets/` — hero image, project figures, portrait, CV, and institutional logos

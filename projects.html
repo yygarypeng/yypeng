@@ -32,7 +32,7 @@
           </div>
           <nav class="menu" aria-label="Main navigation">
             <a href="./index.html">Home</a>
-            <a href="./research.html">Research</a>
+            <a href="./interest.html">Interest</a>
             <a class="active" href="./projects.html">Projects</a>
             <a href="./outputs.html">Outputs</a>
             <a href="./contact.html">Contact</a>
@@ -49,15 +49,18 @@
 
         <article class="feature-row">
           <div class="feature-text">
-            <p class="section-kicker">Physics Motivation</p>
-            <h3>Quantum Correlations</h3>
+            <h3>HWW quantum entanglement and W polarization</h3>
             <p>
-              <strong>Problem:</strong> Quantum-correlation observables in $H \to WW^* \to \ell\nu\ell\nu$ connect Higgs
-              measurements to the structure of electroweak interactions, but the two neutrinos hide key rest-frame information.
+              <strong>Problem:</strong> $H \to WW^* \to \ell\nu\ell\nu$ carries quantum-entanglement, spin-correlation, and
+              W-polarization information, but two neutrinos hide key rest-frame variables.
             </p>
             <p>
-              <strong>Contribution:</strong> I study how W-boson polarization and density-matrix-sensitive observables can be
-              accessed with realistic reconstruction and validation constraints.
+              <strong>Contribution:</strong> MSc thesis and ATLAS note work on W-rest-frame reconstruction for quantum entanglement and
+              W-polarization interpretation.
+            </p>
+            <p>
+              <strong>Extension:</strong> A route toward collider quantum-information observables that remain meaningful after
+              detector effects and systematic checks.
             </p>
           </div>
           <div class="feature-media">
@@ -73,16 +76,18 @@
 
         <article class="feature-row reverse">
           <div class="feature-text">
-            <p class="section-kicker">Case Study</p>
-            <h3>ML Event Reconstruction</h3>
+            <h3>ML reconstruction for missing information</h3>
             <p>
-              <strong>Problem:</strong> Standard kinematic reconstruction is under-constrained in a final state with two
-              unobserved neutrinos, yet the analysis needs rest-frame variables for interpretation.
+              <strong>Problem:</strong> Two unobserved neutrinos make standard kinematic reconstruction under-constrained, while
+              the analysis still needs rest-frame variables.
             </p>
             <p>
-              <strong>Contribution:</strong> I develop transformer, flow-based, and physics-constrained models with
-              reproducible training, ONNX export, systematic stress tests, and validation outputs that can be compared
-              across ATLAS channels.
+              <strong>Contribution:</strong> Attention-based, invertible, and physics-constrained models with reproducible
+              training, ONNX export, and validation outputs.
+            </p>
+            <p>
+              <strong>Extension:</strong> Reconstruction methods that can be compared with conventional approaches, stress-tested,
+              and reused in related measurements or searches.
             </p>
           </div>
           <div class="feature-media">
@@ -92,15 +97,40 @@
 
         <article class="feature-row">
           <div class="feature-text">
-            <p class="section-kicker">Collaboration Software</p>
-            <h3>HGTD Production Database</h3>
+            <h3>Run 3 HWW coupling analysis</h3>
             <p>
-              <strong>Problem:</strong> Detector production requires reliable data management, quality-control views, and
-              interfaces that multiple teams can use consistently.
+              <strong>Problem:</strong> Run 3 measurements need continuity, portable environments, and contributor onboarding.
             </p>
             <p>
-              <strong>Contribution:</strong> I co-develop frontend and backend components for the HGTD production-database
-              webpage, helping collaborators organize, query, and visualize detector information during production.
+              <strong>Contribution:</strong> Participation in ggF/VBF electroweak coupling analysis, MSc student co-mentoring,
+              and workflow tooling.
+            </p>
+            <p>
+              <strong>Extension:</strong> Practical experience connecting physics interpretation with reproducible group analysis
+              workflows.
+            </p>
+          </div>
+          <div class="feature-media">
+            <figure class="run3-combined-figure">
+              <img src="./assets/run3.png" alt="ATLAS Run 3 coupling analysis" width="916" height="433" loading="lazy" />
+            </figure>
+          </div>
+        </article>
+
+        <article class="feature-row reverse">
+          <div class="feature-text">
+            <h3>HGTD production database</h3>
+            <p>
+              <strong>Problem:</strong> Detector production needs reliable data management, quality-control views, and interfaces
+              usable by multiple teams.
+            </p>
+            <p>
+              <strong>Contribution:</strong> Frontend and backend components for organizing, querying, and visualizing HGTD
+              production data.
+            </p>
+            <p>
+              <strong>Extension:</strong> Collaboration-facing software that makes complex detector and production information
+              easier to review.
             </p>
           </div>
           <div class="feature-media">
@@ -109,28 +139,38 @@
         </article>
 
         <article class="feature-row">
-          <div class="feature-media">
-            <figure class="run3-combined-figure">
-              <img src="./assets/run3.png" alt="ATLAS Run 3 coupling analysis" width="916" height="433" loading="lazy" />
-            </figure>
-          </div>
           <div class="feature-text">
-            <p class="section-kicker">Run 3 Analysis</p>
-            <h3>Run 3 HWW Coupling</h3>
+            <h3>Workstation and CernVM-FS</h3>
             <p>
-              <strong>Problem:</strong> Run 3 measurements need analysis continuity, portable environments, and mentorship
-              structures that let new contributors become productive quickly.
+              <strong>Problem:</strong> ATLAS analysis depends on reproducible software environments, reliable local computing,
+              and access to collaboration software stacks.
             </p>
             <p>
-              <strong>Contribution:</strong> I co-mentor two MSc students studying electroweak couplings in $H \to WW^*$ and
-              contribute workflow tooling that reduces setup friction for collaborators.
+              <strong>Contribution:</strong> NTHU EHEP workstation maintenance, Docker/Podman workflows, high-performance AI
+              resources, and local CernVM-FS caching.
             </p>
+          </div>
+          <div class="feature-media">
+            <img src="./assets/ws.png" alt="NTHU EHEP workstation and computing setup" width="1300" height="731" loading="lazy" />
           </div>
         </article>
       </section>
 
+      <section class="content-block" aria-label="ATLAS participation">
+        <h2 class="section-title">Meetings, mentoring, support</h2>
+        <div class="two-column-list">
+          <ul class="list-clean">
+            <li><strong>ATLAS talks:</strong> Oral presentations at ATLAS NRML Workshop 2025 and ATLAS Collaboration Week 2024.</li>
+            <li><strong>Workshops:</strong> Participation in ATLAS HWW, Higgs, and quantum-entanglement meetings across CERN and international institutes.</li>
+          </ul>
+          <ul class="list-clean">
+            <li><strong>Mentoring:</strong> Co-mentoring MSc students on Run 3 HWW coupling analysis and ATLAS/ML workflows.</li>
+            <li><strong>Tutorials:</strong> Teaching ATLAS-relevant tools and analysis knowledge to newcomers in the NTHU group.</li>
+          </ul>
+        </div>
+      </section>
+
       <section class="content-block">
-        <p class="section-kicker">Evidence</p>
         <h2 class="section-title">Open code</h2>
         <div class="button-row">
           <a href="https://github.com/yygarypeng">GitHub</a>
