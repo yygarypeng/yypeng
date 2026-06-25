@@ -4,11 +4,11 @@ Static multi-page research portfolio for physics PhD applications and ATLAS-faci
 
 ## Site Structure
 
-- `index.html` — concise homepage for the research arc, current work, and connected contributions
-- `interest.html` — research directions from HWW quantum information to precision measurements, BSM searches, deployable ML, and analysis infrastructure
+- `index.html` — concise homepage for the research arc, current ownership, PhD focus, and connected contributions
+- `phd.html` — one-word `PhD` navigation page for prospective supervisors, immediate contribution areas, development goals, and anchored directions for quantum, diboson/EW, deployable ML, modern ML, and infrastructure
 - `projects.html` — project stories ordered from HWW physics to ML reconstruction, Run 3 analysis, detector software, and computing support
-- `outputs.html` — verifiable evidence: thesis, ATLAS note, talks, ATLAS participation, software/computing, honors, and skills
-- `contact.html` — CERN email, research profiles, and availability
+- `outputs.html` — evidence table for thesis, ATLAS note, talks, ATLAS participation, software/computing, honors, skills, and public/internal status
+- `contact.html` — CERN email, CV, thesis, research profiles, application intent, and availability
 - `styles.css` — shared design tokens, typography, layout sections, responsive rules, focus states, and footer/logo treatment
 - `assets/` — hero image, project figures, portrait, CV, and institutional logos
 
