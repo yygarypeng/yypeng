@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
     <meta
       name="description"
       content="Yuan-Yen Peng - ATLAS experimental high energy physics, machine-learning reconstruction, and detector software."
@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#001f3f" />
     <title>Yuan-Yen Peng | ATLAS Physics and Machine Learning</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -51,16 +54,19 @@
           <div class="intro-copy">
             <div class="intro-heading-row">
               <div>
-                <h2 class="section-title intro-title">Physics and Beyond</h2>
+                <h2 class="section-title intro-title">ATLAS HWW Reconstruction, W Polarization, and Physics-Guided ML</h2>
               </div>
             </div>
             <p>
-              I am <a href="./contact.html">Yuan-Yen Peng</a>, an applicant for the ATLAS experimental particle physics program.
-              Looking toward the future of collider physics, I envision a supportive partnership among physics, detectors, and machine learning.
-              Physics raises questions and provides essential context, detectors create unique environments, and ML harnesses cutting-edge methodologies to uncover answers and drive groundbreaking discoveries.
-              I aspire to enhance ATLAS's impact by delivering deep insights through precise measurements, creating state-of-the-art deployable tools, and facilitating robust collaborative efforts.
-              <a href="./assets/cv.pdf" target="_blank">Here is my CV</a>.
+              I am <a href="./contact.html">Yuan-Yen Peng</a>, an ATLAS HWW researcher working on missing-information reconstruction, W-polarization interpretation, Run 3 validation, and HGTD production-database development.
+              My focus is physics-guided ML for under-constrained final states, validated through bias, resolution, shapes, and analysis-level observables.
+              I am seeking ATLAS PhD projects where reconstruction, inference, or deployable workflows lead to concrete physics output and service contribution.
             </p>
+            <div class="button-row button-row-eval">
+              <a href="./assets/cv.pdf" target="_blank">CV</a>
+              <a href="./outputs.html">Selected outputs</a>
+              <a href="./projects.html">Projects</a>
+            </div>
           </div>
 
           <aside class="intro-identity" aria-label="Personal identity">
@@ -82,25 +88,25 @@
           <article class="program">
             <h3>Physics</h3>
             <p>
-              Higgs and SM precision measurements, quantum information, W polarizations.
+              ATLAS HWW, Higgs/EW measurements, W-polarization interpretation, and quantum-information observables.
             </p>
           </article>
           <article class="program">
-            <h3>Machine Learning</h3>
+            <h3>ML reconstruction</h3>
             <p>
-              Attention-based, invertible, physics-constrained models; validation against shapes, bias, resolution.
+              Attention-based, invertible, and physics-constrained models for under-constrained final states.
             </p>
           </article>
           <article class="program">
-            <h3>Ownership</h3>
+            <h3>Validation</h3>
             <p>
-              HWW QE kickoff member; ML model integrated into the central QE framework; Run3 first-look of control-regions.
+              Shape, bias, resolution, truth-to-reco, baseline, and control-region checks.
             </p>
           </article>
           <article class="program">
-            <h3>Service and mentoring</h3>
+            <h3>Service</h3>
             <p>
-              HGTD qualification task, students mentoring, and NTHU experimental HEP workstation/CernVM-FS facility setup.
+              HGTD database qualification, Run 3 HWW support, MSc mentoring, and reproducible ATLAS/ML environments.
             </p>
           </article>
         </div>

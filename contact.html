@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
     <meta
       name="description"
       content="Contact, CV, and research links for Yuan-Yen Peng."
@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#001f3f" />
     <title>Contact | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -50,8 +53,7 @@
           <div>
             <h2 class="section-title">Contact</h2>
             <p>
-              I am applying for ATLAS PhD projects combining physics analysis with reconstruction, validation, ML
-              deployment, or collaboration software. CERN email is preferred for research correspondence.
+              I am seeking ATLAS PhD projects centered on physics analysis, with ML, reconstruction, workflow, trigger, or detector-service components when they directly support ATLAS output.
             </p>
             <ul class="list-clean">
               <li><b>Email:</b> <a href="mailto:yuan-yen.peng@cern.ch">yuan-yen.peng@cern.ch</a></li>
@@ -60,8 +62,7 @@
                 <a href="https://mattermost.web.cern.ch/">CERN server</a>, Yuan-Yen Peng (ypeng), for internal contact
               </li>
               <li>
-                <b>Office:</b>
-                <a href="https://maps.app.goo.gl/aAvqsgRZ3gciwMFr7">R525-11, 5F, Gen Bldg II (B-side), 101, Section 2, Kuang-Fu Road, Hsinchu 300044, Taiwan</a>
+                <b>Affiliation:</b> ATLAS Group, National Tsing Hua University, Hsinchu, Taiwan
               </li>
             </ul>
             <div class="button-row">
@@ -116,7 +117,7 @@
               <p>Personal site; not endorsed by CERN or ATLAS.</p>
             </div>
           </details>
-          <span class="footer-updated">Last updated: April 2026</span>
+          <span class="footer-updated">Last updated: June 2026</span>
         </div>
       </div>
     </footer>

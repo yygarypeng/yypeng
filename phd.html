@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
     <meta
       name="description"
       content="PhD-facing research profile for Yuan-Yen Peng: ATLAS Higgs physics, ML reconstruction, analysis infrastructure, and immediate contribution areas."
@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#001f3f" />
     <title>PhD | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -46,102 +49,78 @@
 
     <main id="main-content" class="content">
       <section class="content-block research-thesis phd-wide">
-        <h2 class="section-title">For prospective PhD supervisors</h2>
+        <h2 class="section-title">For Prospective PhD Advisors</h2>
         <p>
-          I am applying for ATLAS PhD projects where physics analysis, reconstruction, statistical interpretation, and
-          collaboration-ready software meet. Machine learning is a tool in my work, not the center of my identity.
-        </p>
-        <p>
-          My current base is $H \to WW^* \to \ell\nu\ell\nu$: two neutrinos, hidden kinematics, W polarization,
-          quantum-information observables, Run 3 control regions, and deployable analysis workflows.
+          I am looking for ATLAS PhD projects where physics analysis remains central and ML is used as a validated tool for reconstruction, inference, or deployable workflows.
+          My strongest fit is with Higgs/EW and diboson measurements, neutrino-rich or under-constrained reconstruction, analysis-aware ML, and detector/service work connected to long-term ATLAS output.
         </p>
       </section>
 
-      <section class="content-block research-fit" aria-label="Research fit map">
-        <h2 class="section-title">Research fit map</h2>
+      <section class="content-block research-fit" aria-label="Immediate contribution areas">
+        <h2 class="section-title">Immediate Contribution Areas</h2>
         <div class="program-grid">
           <article class="program">
-            <h3>Higgs, electroweak, and diboson measurements</h3>
+            <h3>HWW / diboson / EW validation</h3>
             <p>
-              <b>Why:</b> Precision measurements stress-test the Standard Model and probe new physics indirectly.
-            </p>
-            <p>
-              <b>Fit:</b> HWW, W polarization, quantum-information observables, and Run 3 control regions.
-            </p>
-            <p>
-              <b>Grow:</b> Own more of the measurement chain, from selections and validation to interpretation.
+              Control-region checks, object-level validation, shape comparisons, bias and resolution studies, and
+              systematic cross-checks.
             </p>
           </article>
           <article class="program">
-            <h3>BSM and exotic signatures</h3>
+            <h3>Missing-information reconstruction</h3>
             <p>
-              <b>Why:</b> Searches often depend on subtle event features or partially observed information.
-            </p>
-            <p>
-              <b>Fit:</b> Two-neutrino HWW trained me on under-constrained final states and hidden kinematics.
-            </p>
-            <p>
-              <b>Grow:</b> Apply reconstruction and classification to search sensitivity, not just standard analyses.
+              ML-assisted reconstruction for neutrino-rich or under-constrained final states, validated through physics
+              observables and baseline comparisons.
             </p>
           </article>
           <article class="program">
-            <h3>Detector, trigger, and object reconstruction</h3>
+            <h3>Deployable ATLAS workflows</h3>
             <p>
-              <b>Why:</b> Physics reach starts with detector performance, trigger choices, and object definitions.
-            </p>
-            <p>
-              <b>Fit:</b> HGTD database qualification plus HWW dependence on leptons, missing energy, and event reconstruction.
-            </p>
-            <p>
-              <b>Grow:</b> Contribute where detector/reconstruction validation directly shapes physics output.
+              ROOT, FastFrames, Python, ONNX, Docker/Podman, CernVM-FS, and handover-friendly analysis environments.
             </p>
           </article>
           <article class="program">
-            <h3>Statistical modelling and interpretation</h3>
+            <h3>Detector-facing service</h3>
             <p>
-              <b>Why:</b> Results depend on uncertainty treatment and separating physics from analysis artifacts.
-            </p>
-            <p>
-              <b>Fit:</b> I validate shapes, truth-to-reco correlations, ambiguity, bias, resolution, and baselines.
-            </p>
-            <p>
-              <b>Grow:</b> Build stronger inference and uncertainty-aware validation skills for final results.
-            </p>
-          </article>
-          <article class="program">
-            <h3>Reproducible ATLAS analysis infrastructure</h3>
-            <p>
-              <b>Why:</b> ATLAS analyses must survive review, preservation, handover, and student onboarding.
-            </p>
-            <p>
-              <b>Fit:</b> FastFrames, ROOT, Python, ONNX, Docker/Podman, CernVM-FS, Git, and group computing support.
-            </p>
-            <p>
-              <b>Grow:</b> Build portable, reviewable workflows useful beyond my own analysis task.
-            </p>
-          </article>
-          <article class="program">
-            <h3>Physics-guided ML for reconstruction</h3>
-            <p>
-              <b>Why:</b> Some key event-level quantities are not directly observed but still drive sensitivity.
-            </p>
-            <p>
-              <b>Fit:</b> Attention-based, invertible, and physics-constrained models for missing-information reconstruction.
-            </p>
-            <p>
-              <b>Grow:</b> Keep ML interpretable, deployable, and tied to measurable physics gain.
+              HGTD production-database experience and readiness to contribute to upgrade or service tasks connected to
+              ATLAS physics output.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="content-block">
-        <h2 class="section-title">Immediate fit</h2>
-        <ul class="list-clean list-wide">
-          <li><b>Physics:</b> HWW, Higgs/BSM, diboson/EW, W polarization, quantum-information observables, and missing-neutrino final states.</li>
-          <li><b>Technical base:</b> FastFrames, ROOT, Python, ONNX, Docker/Podman, CernVM-FS, HGTD database work, and group computing support.</li>
-          <li><b>Goal:</b> ATLAS measurement ownership, with reconstruction, statistics, and ML used only when they improve physics sensitivity or robustness.</li>
-        </ul>
+      <section class="content-block research-fit" aria-label="Directions">
+        <h2 class="section-title">Directions</h2>
+        <div class="program-grid">
+          <article class="program">
+            <h3>Higgs, electroweak, and diboson measurements</h3>
+            <p>
+              HWW, W polarization, quantum-information observables, and Run 3 coupling studies as routes toward stronger
+              ATLAS measurement ownership.
+            </p>
+          </article>
+          <article class="program">
+            <h3>Physics-guided ML reconstruction</h3>
+            <p>
+              Attention-based, invertible, and physics-constrained models for missing-information reconstruction, kept
+              interpretable and tied to measurable analysis gain.
+            </p>
+          </article>
+          <article class="program">
+            <h3>Detector, trigger, and object reconstruction</h3>
+            <p>
+              HGTD service work and HWW object-level validation motivate reconstruction- or detector-facing projects
+              where performance studies affect physics reach.
+            </p>
+          </article>
+          <article class="program">
+            <h3>Reproducible analysis infrastructure</h3>
+            <p>
+              FastFrames, ROOT, Python, ONNX, containerized workflows, CernVM-FS, Git, and group-computing support for workflows
+              that survive review, handover, and reuse.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="content-block">
@@ -182,7 +161,7 @@
               <p>Personal site; not endorsed by CERN or ATLAS.</p>
             </div>
           </details>
-          <span class="footer-updated">Last updated: April 2026</span>
+          <span class="footer-updated">Last updated: June 2026</span>
         </div>
       </div>
     </footer>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
     <meta
       name="description"
       content="Flagship ATLAS analysis, ML reconstruction, and detector software projects by Yuan-Yen Peng."
@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#001f3f" />
     <title>Projects | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -45,22 +48,22 @@
     </header>
 
     <main id="main-content" class="content">
-      <section class="feature-stack" aria-label="Project stories">
-
+      <section class="feature-stack" aria-label="Flagship project evidence">
         <article class="feature-row">
           <div class="feature-text">
-            <h3>HWW quantum entanglement and W polarization</h3>
+            <h3>HWW quantum information measurement</h3>
             <p>
-              <b>Problem:</b> $H \to WW^* \to \ell\nu\ell\nu$ carries quantum-entanglement, spin-correlation, and
-              W-polarization information, but two neutrinos hide key rest-frame variables.
+              <b>Problem:</b> $H \to WW^* \to \ell\nu\ell\nu$ contains spin-correlation and W-polarization information, but the two neutrinos make key rest-frame variables under-constrained.
             </p>
             <p>
-              <b>Role and evidence:</b> Kickoff member of the HWW quantum-entanglement / W-polarization project, working
-              on missing-information reconstruction for MSc thesis and ATLAS internal-note development.
+              <b>My role:</b> I contributed from the kickoff stage, focusing on missing-information reconstruction and its connection to W-polarization and spin-correlation interpretation.
             </p>
             <p>
-              <b>Relevance:</b> quantum-information, diboson polarization, Higgs/EW precision, and missing-information
-              final states where reconstruction must be interpretable.
+              <b>Output:</b> MSc thesis and ATLAS internal-note contribution on HWW quantum information, W polarization, and ML-assisted reconstruction.
+            </p>
+            <p>
+              <b>Relevance:</b> This work prepares me for Higgs/EW precision, diboson polarization, and quantum-information measurements where
+              reconstruction methods must remain interpretable and analysis-validatable.
             </p>
           </div>
           <div class="feature-media">
@@ -76,22 +79,18 @@
 
         <article class="feature-row reverse">
           <div class="feature-text">
-            <h3>ML reconstruction for missing information</h3>
+            <h3>Missing-information reconstruction</h3>
             <p>
-              <b>Problem:</b> Two unobserved neutrinos make standard kinematic reconstruction under-constrained, while
-              the analysis still needs rest-frame variables.
+              <b>Problem:</b> Two unobserved neutrinos prevent direct reconstruction of rest-frame variables needed for polarization and spin-correlation observables.
             </p>
             <p>
-              <b>Role:</b> Developed validation-oriented ML reconstruction workflows; one model has been integrated into
-              the central QE analysis framework.
+              <b>My role:</b> I developed and validated ML-assisted reconstruction strategies for W and neutrino kinematics, emphasizing physics checks rather than standalone ML scores.
             </p>
             <p>
-              <b>Validation:</b> Observable shapes, bias/resolution, truth-to-reco correlation, detector robustness,
-              systematics behavior, and baseline comparison where public information allows.
+              <b>Output:</b> An attention-based, physics-constrained reconstruction model integrated into the central QE analysis framework.
             </p>
             <p>
-              <b>Tools and relevance:</b> PyTorch/Lightning, FrEIA, ONNX, ROOT/uproot/mplhep; relevant to neutrino
-              reconstruction, flow/generative ambiguity sampling, and collaboration-review-ready ML.
+              <b>Relevance:</b> The key tests are shape, bias, resolution, truth-to-reco behavior, robustness, and comparison with non-ML baselines.
             </p>
           </div>
           <div class="feature-media">
@@ -101,86 +100,32 @@
 
         <article class="feature-row">
           <div class="feature-text">
-            <h3>Run 3 HWW coupling analysis</h3>
+            <h3>Run 3, HGTD, and reproducible workflows</h3>
             <p>
-              <b>Problem:</b> Run 3 measurements need continuity, portable environments, and contributor onboarding.
+              <b>Problem:</b> ATLAS analyses require reliable validation, detector-facing service, and computing environments that survive review, handover, and reuse.
             </p>
             <p>
-              <b>Role:</b> First-look Run 3 HWW coupling-analysis studies, recent focus on control regions, workflow
-              development, validation plotting, and MSc student mentoring.
+              <b>My role:</b> I contributed to Run 3 HWW first-look and control-region studies, supported MSc student onboarding, co-developed HGTD database components, and maintained local ATLAS/ML workflows.
             </p>
             <p>
-              <b>Tools and relevance:</b> FastFrames, ROOT, Python, reproducible environments, and real ATLAS analysis
-              operations beyond isolated ML prototyping.
+              <b>Methods:</b> FastFrames, ROOT, Python, Docker/Podman, CernVM-FS, Git, Django/Vue, and group-level workflow support.
+            </p>
+            <p>
+              <b>Relevance:</b> These tasks show readiness for reviewable ATLAS work combining analysis validation, detector service, and reproducible software.
             </p>
           </div>
           <div class="feature-media">
             <figure class="run3-combined-figure">
-              <img src="./assets/run3.png" alt="ATLAS Run 3 coupling analysis" width="916" height="433" loading="lazy" />
+              <img src="./assets/run3.png" alt="ATLAS Run3 coupling analysis" width="916" height="433" loading="lazy" />
             </figure>
           </div>
         </article>
-
-        <article class="feature-row reverse">
-          <div class="feature-text">
-            <h3>HGTD production database</h3>
-            <p>
-              <b>Problem:</b> Detector production needs reliable data management, quality-control views, and interfaces
-              usable by multiple teams.
-            </p>
-            <p>
-              <b>Role:</b> Recent ATLAS qualification task: frontend/backend components for organizing, querying, and
-              visualizing HGTD production data.
-            </p>
-            <p>
-              <b>Tools and relevance:</b> Django, Vue.js, database-backed interfaces; evidence of ATLAS service and
-              detector-software contribution beyond physics analysis.
-            </p>
-          </div>
-          <div class="feature-media">
-            <img src="./assets/hgtd.png" alt="HGTD related detector and software figure" width="1300" height="617" loading="lazy" />
-          </div>
-        </article>
-
-        <article class="feature-row">
-          <div class="feature-text">
-            <h3>NTHU workstation and CernVM-FS</h3>
-            <p>
-              <b>Problem:</b> ATLAS analysis depends on reproducible software environments, reliable local computing,
-              and access to collaboration software stacks.
-            </p>
-            <p>
-              <b>Role:</b> Main working facility for the NTHU experimental HEP group, supporting ATLAS analysis, ML
-              training, containerized workflows, GPU resources, and CernVM-FS caching.
-            </p>
-            <p>
-              <b>Tools and relevance:</b> Docker/Podman, CernVM-FS, UNIX, ROOT, Python; useful for reproducible ML
-              training/inference and reviewable ATLAS workflows.
-            </p>
-          </div>
-          <div class="feature-media">
-            <img src="./assets/ws.png" alt="NTHU EHEP workstation and computing setup" width="1300" height="731" loading="lazy" />
-          </div>
-        </article>
-      </section>
-
-      <section class="content-block" aria-label="ATLAS participation">
-        <h2 class="section-title">Meetings, mentoring, support</h2>
-        <div class="two-column-list">
-          <ul class="list-clean">
-            <li><b>ATLAS talks:</b> Oral presentations at ATLAS NRML Workshop 2025 and ATLAS Collaboration Week 2024.</li>
-            <li><b>Workshops:</b> Participation in ATLAS HWW, Higgs, and quantum-entanglement meetings across CERN and international institutes.</li>
-          </ul>
-          <ul class="list-clean">
-            <li><b>Mentoring:</b> Co-mentoring MSc students on Run 3 HWW coupling analysis and ATLAS/ML workflows.</li>
-            <li><b>Tutorials:</b> Teaching ATLAS-relevant tools and analysis knowledge to newcomers in the NTHU group.</li>
-          </ul>
-        </div>
       </section>
 
       <section class="content-block">
-        <h2 class="section-title">Open code</h2>
+        <h2 class="section-title">Evidence and profiles</h2>
         <div class="button-row">
+          <a href="./outputs.html">Outputs</a>
           <a href="https://github.com/yygarypeng">GitHub</a>
           <a href="https://gitlab.cern.ch/ypeng">CERN GitLab</a>
           <a href="https://hub.docker.com/repositories/yygarypeng">Docker Hub</a>
@@ -216,7 +161,7 @@
               <p>Personal site; not endorsed by CERN or ATLAS.</p>
             </div>
           </details>
-          <span class="footer-updated">Last updated: April 2026</span>
+          <span class="footer-updated">Last updated: June 2026</span>
         </div>
       </div>
     </footer>

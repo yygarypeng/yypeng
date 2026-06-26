@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
     <meta
       name="description"
       content="Scientific outputs, ATLAS talks, honors, and technical highlights from Yuan-Yen Peng."
@@ -11,6 +11,9 @@
     <meta name="theme-color" content="#001f3f" />
     <title>Outputs | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -46,158 +49,94 @@
 
     <main id="main-content" class="content">
       <section class="content-block research-snapshot" aria-label="evidence summary">
-        <h2 class="section-title">Outputs and evidence</h2>
-        <div class="signal-grid" aria-label="Key ownership signals">
-          <article class="signal-card">
-            <span class="signal-kicker">Kickoff</span>
-            <h3 class="signal-title">HWW quantum information</h3>
-            <p>Kickoff member of the HWW quantum-entanglement and W-polarization project.</p>
-          </article>
-          <article class="signal-card">
-            <span class="signal-kicker">Deployed</span>
-            <h3 class="signal-title">Central QE framework</h3>
-            <p>ML reconstruction model integrated into the central QE analysis framework.</p>
-          </article>
-          <article class="signal-card">
-            <span class="signal-kicker">Run 3</span>
-            <h3 class="signal-title">First look and control regions</h3>
-            <p>Run 3 HWW coupling-analysis work, with recent focus on control-region studies.</p>
-          </article>
-          <article class="signal-card">
-            <span class="signal-kicker">Mentoring</span>
-            <h3 class="signal-title">MSc analysis support</h3>
-            <p>Mentoring MSc students in the Run 3 HWW analysis programme.</p>
-          </article>
-          <article class="signal-card">
-            <span class="signal-kicker">Qualification</span>
-            <h3 class="signal-title">HGTD database</h3>
-            <p>Recent ATLAS qualification task on HGTD production-database workflows.</p>
-          </article>
-        </div>
-        <div class="table-wrap" role="region" aria-label="Outputs and evidence table" tabindex="0">
+        <h2 class="section-title">Outputs and Evidence</h2>
+        <p>
+          This page lists public and public-safe evidence for my ATLAS HWW, ML reconstruction, Run 3 validation,
+          HGTD database, and workflow contributions. Some ATLAS material is internal or access-restricted; I therefore
+          link public material where possible and describe internal work only at a high level.
+        </p>
+        <div class="table-wrap" role="region" aria-label="Condensed outputs and evidence table" tabindex="0">
           <table class="evidence-table">
             <thead>
               <tr>
-                <th>Output</th>
-                <th>Public status</th>
-                <th>Evidence</th>
-                <th>PhD relevance</th>
+                <th>Item</th>
+                <th>Status</th>
+                <th>My role</th>
+                <th>Public-safe evidence</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>MSc thesis</td>
                 <td>
-                  <a class="status-link" href="https://etd.lib.nthu.edu.tw/thesis/detail/d5387241bad28abb4b3cb0facb63184d/">
-                    <span class="status-badge public">Public</span>
-                  </a>
+                  <a href="https://etd.lib.nthu.edu.tw/thesis/detail/d5387241bad28abb4b3cb0facb63184d/">MSc thesis</a>
+                  and ATLAS internal note ANA-HIGP-2024-27-INT1
                 </td>
-                <td>Quantum entanglement measurements in $H \to WW^* \to \ell\nu\ell\nu$ with ATLAS</td>
-                <td>Main research narrative: HWW, quantum information, W polarization, and reconstruction</td>
+                <td>
+                  <span class="status-badge public">Public thesis</span>
+                  <span class="status-badge internal">ATLAS-internal note</span>
+                </td>
+                <td>Main author of the thesis; contributor to ML-assisted reconstruction and W-polarization interpretation in the internal note.</td>
+                <td>Thesis link, note title, and high-level role summary.</td>
               </tr>
               <tr>
-                <td>ATLAS internal note</td>
+                <td>ML-assisted reconstruction in the central QE framework</td>
                 <td><span class="status-badge internal">Internal</span></td>
-                <td>ANA-HIGP-2024-27-INT1</td>
-                <td>Collaboration-level HWW QE, ML reconstruction, and W-polarization interpretation</td>
-              </tr>
-              <tr>
-                <td>ML model deployment</td>
-                <td><span class="status-badge internal">Internal</span></td>
-                <td>Model integrated into the central QE analysis framework</td>
-                <td>Concrete bridge from ML prototype to analysis-framework use</td>
-              </tr>
-              <tr>
-                <td>ATLAS NRML Workshop 2025</td>
-                <td>
-                  <a class="status-link" href="https://indico.cern.ch/event/1498256/contributions/6453803/">
-                    <span class="status-badge restricted">Indico-dependent</span>
-                  </a>
-                </td>
-                <td>Talk on W and neutrino reconstruction with ML</td>
-                <td>ML-for-ATLAS visibility and technical communication</td>
-              </tr>
-              <tr>
-                <td>ATLAS Collaboration Week 2024</td>
-                <td>
-                  <a class="status-link" href="https://indico.cern.ch/event/1441377/contributions/6065508/">
-                    <span class="status-badge restricted">Indico-dependent</span>
-                  </a>
-                </td>
-                <td>Talk on W-boson rest-frame reconstruction in HWW</td>
-                <td>ATLAS collaboration participation and HWW reconstruction context</td>
+                <td>Developed validation-oriented reconstruction workflows for under-constrained HWW final states.</td>
+                <td>High-level method and validation summary without internal performance details.</td>
               </tr>
               <tr>
                 <td>Run 3 HWW coupling analysis</td>
                 <td><span class="status-badge internal">Internal</span></td>
-                <td>First-look Run 3 studies; recent focus on control regions</td>
-                <td>Real Run 3 analysis experience and MSc student mentoring</td>
+                <td>Contributed to first-look studies, control-region checks, and MSc student support.</td>
+                <td>Public-safe summary of analysis-validation experience.</td>
               </tr>
               <tr>
-                <td>HGTD production database</td>
-                <td><span class="status-badge restricted">Project-dependent</span></td>
-                <td>Frontend/backend detector-production database work</td>
-                <td>Recent ATLAS qualification task and service-work evidence</td>
-              </tr>
-              <tr>
-                <td>NTHU workstation</td>
-                <td><span class="status-badge restricted">Group facility</span></td>
-                <td>Main working facility for the NTHU experimental HEP group</td>
-                <td>Computing support for ATLAS analysis, ML training, containers, and CernVM-FS access</td>
-              </tr>
-              <tr>
-                <td>GitHub</td>
                 <td>
-                  <a class="status-link" href="https://github.com/yygarypeng">
-                    <span class="status-badge public">Public</span>
-                  </a>
+                  <a href="https://indico.cern.ch/event/1441377/contributions/6065508/">ATLAS Collaboration Week 2024</a>
+                  and
+                  <a href="https://indico.cern.ch/event/1498256/contributions/6453803/">NRML Workshop 2025</a>
+                  talks
                 </td>
-                <td>Open code profile</td>
-                <td>Public technical style and software practice</td>
+                <td><span class="status-badge restricted">Access-dependent</span></td>
+                <td>Presented HWW reconstruction and ML-related work in ATLAS settings.</td>
+                <td>Links where access allows; otherwise talk titles and public-safe summaries.</td>
               </tr>
               <tr>
-                <td>CERN GitLab</td>
-                <td>
-                  <a class="status-link" href="https://gitlab.cern.ch/ypeng">
-                    <span class="status-badge restricted">CERN-restricted</span>
-                  </a>
-                </td>
-                <td>ATLAS software repositories</td>
-                <td>Collaboration software work and workflow evidence</td>
+                <td>HGTD production database and NTHU ATLAS/ML workstation</td>
+                <td><span class="status-badge restricted">Project/group</span></td>
+                <td>Co-developed database components and supported reproducible ATLAS/ML workflows.</td>
+                <td>Technical stack and public-safe role summary.</td>
               </tr>
               <tr>
-                <td>Docker Hub</td>
                 <td>
-                  <a class="status-link" href="https://hub.docker.com/repositories/yygarypeng">
-                    <span class="status-badge public">Public</span>
-                  </a>
+                  Code and environments:
+                  <a href="https://github.com/yygarypeng">GitHub</a>,
+                  <a href="https://gitlab.cern.ch/ypeng">CERN GitLab</a>,
+                  <a href="https://hub.docker.com/repositories/yygarypeng">Docker Hub</a>
                 </td>
-                <td>Containerized environments</td>
-                <td>Reproducibility and computing infrastructure</td>
+                <td>
+                  <span class="status-badge public">Public</span>
+                  <span class="status-badge restricted">CERN-restricted</span>
+                </td>
+                <td>Maintained public profiles, collaboration repositories, and containerized workflow material.</td>
+                <td>Public repositories where available; CERN material only under proper access.</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p class="access-note">
-          Some ATLAS materials are internal or access-restricted. I only link public material here and can discuss internal
-          work at a high level without disclosing collaboration-confidential information.
-        </p>
-        <p class="access-note">
-          Fast reading guide: kickoff/QE note for quantum information; Run 3/control regions for diboson and EW; central
-          QE deployment plus GitHub/CERN GitLab/Docker for ML and reproducibility; HGTD/workstation for service-oriented groups.
+          I do not post ATLAS-internal details publicly. Internal notes, talk material, and restricted repositories are
+          discussed only at a public-safe level unless proper access is available.
         </p>
       </section>
 
       <section class="content-block">
         <h2 class="section-title">Honors and skills</h2>
         <ul class="list-clean list-wide">
-          <li>Phi Tau Phi Scholastic Honor Society (2025)</li>
-          <li>College of Science Elite Student Award (2025)</li>
-          <li>Maxwell Scholarship (2024)</li>
-          <li>ML stack: PyTorch/Lightning, FrEIA, ONNX, TensorFlow/Keras</li>
-          <li>HEP stack: ROOT, FastFrames, uproot, mplhep</li>
-          <li>Software stack: Python, C++, Django and Vue.js working knowledge, Git, Docker/Podman, CernVM-FS, UNIX</li>
-          <li>Languages: English (TOEFL iBT 101), Mandarin Chinese (native)</li>
+          <li><b>Honors:</b> Phi Tau Phi Scholastic Honor Society, College of Science Elite Student Award, Maxwell Scholarship.</li>
+          <li><b>HEP/analysis:</b> ROOT, FastFrames, uproot, mplhep, Python, C++.</li>
+          <li><b>ML/software:</b> PyTorch/Lightning, FrEIA, ONNX, TensorFlow/Keras, Git, Docker/Podman, CernVM-FS, UNIX.</li>
+          <li><b>Languages:</b> English (TOEFL iBT 101), Mandarin Chinese (native).</li>
         </ul>
       </section>
     </main>
@@ -230,7 +169,7 @@
               <p>Personal site; not endorsed by CERN or ATLAS.</p>
             </div>
           </details>
-          <span class="footer-updated">Last updated: April 2026</span>
+          <span class="footer-updated">Last updated: June 2026</span>
         </div>
       </div>
     </footer>

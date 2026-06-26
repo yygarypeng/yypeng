@@ -1,20 +1,20 @@
 # Yuan-Yen Peng Portfolio Website
 
-Static multi-page research portfolio for physics PhD applications and ATLAS-facing review. The site presents one coherent arc: ATLAS HWW physics with missing neutrinos, ML-based reconstruction of hidden rest-frame information, validation for quantum-information and precision-measurement observables, and reproducible analysis infrastructure.
+Static multi-page research portfolio for ATLAS PhD applications and cold-email evidence links. The site is intentionally compact: ATLAS HWW physics, missing-information reconstruction, validation-oriented ML, Run 3 analysis support, HGTD service work, and public-safe outputs.
 
 ## Site Structure
 
-- `index.html` — concise homepage for the research arc, current ownership, PhD focus, and connected contributions
-- `phd.html` — one-word `PhD` navigation page for prospective supervisors, immediate contribution areas, development goals, and anchored directions for quantum, diboson/EW, deployable ML, modern ML, and infrastructure
-- `projects.html` — project stories ordered from HWW physics to ML reconstruction, Run 3 analysis, detector software, and computing support
-- `outputs.html` — evidence table for thesis, ATLAS note, talks, ATLAS participation, software/computing, honors, skills, and public/internal status
-- `contact.html` — CERN email, CV, thesis, research profiles, application intent, and availability
+- `index.html` — 30-second homepage for ATLAS HWW identity, physics-guided ML fit, selected evidence links, and four quick profile cards
+- `phd.html` — advisor-facing page with immediate contribution areas and four selected PhD directions
+- `projects.html` — three compact project evidence blocks using `Problem / My role / Output / Relevance`
+- `outputs.html` — public and public-safe evidence table for thesis, ATLAS note, talks, analysis work, software, and access status
+- `contact.html` — sparse contact page with CERN email, internal-contact route, affiliation, CV/thesis/output links, and profiles
 - `styles.css` — shared design tokens, typography, layout sections, responsive rules, focus states, and footer/logo treatment
 - `assets/` — hero image, project figures, portrait, CV, and institutional logos
 
-All pages share the same top navigation, KaTeX setup, footer wording, and institutional logo footer.
+All pages share the same top navigation, KaTeX setup, Google Fonts setup, content-security policy, footer wording, and institutional logo footer.
 
-The stylesheet is organized by purpose: base rules, header/hero, intro, content, project rows, lists/footer, and responsive overrides. Typography uses an Optima-led display stack for headings/kickers and a serif stack for long-form academic body copy.
+Typography uses Google Fonts for cross-device consistency: `Marcellus` for display/title text, with Optima-style fallbacks, and `Inter` for body/UI text, with Helvetica Neue-style fallbacks. The CSS does not depend on local font files.
 
 ## Local Preview
 
@@ -40,11 +40,23 @@ Update page content directly in the HTML files above, including:
 - contact links and preferred correspondence details
 - footer `Last updated` text and institutional logo list
 
-If you add new media, place files in `assets/` and reference them with relative paths (for example `./assets/your-image.png`).
+Keep pages compact. The intended text density is:
+
+- Home: three short identity/fit sentences plus four cards
+- PhD: one short opening, four immediate contribution areas, four selected directions
+- Projects: three projects only
+- Outputs: one public-safe summary paragraph plus the evidence table
+- Contact: minimal contact and profile links
+
+If you add new media, place files in `assets/` and reference them with relative paths (for example `./assets/your-image.png`). Remove unused media before publishing.
 
 When adding images, include meaningful `alt` text plus `width` and `height` attributes to avoid layout shift. Use `loading="lazy"` for below-fold images.
 
 Every page includes KaTeX from jsDelivr and a `renderMathInElement(...)` block for inline physics notation. Preserve this block if editing page headers.
+
+Every page also loads Google Fonts from `fonts.googleapis.com` / `fonts.gstatic.com`. If changing fonts, update both the `<link>` tags and the per-page content-security policy.
+
+Do not publish local artifacts such as `.DS_Store`, `__MACOSX/`, local font folders, or zip exports.
 
 ## Continuous Integration
 
