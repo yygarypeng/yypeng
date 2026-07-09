@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';"
+    />
     <meta
       name="description"
       content="Flagship ATLAS analysis, ML reconstruction, and detector software projects by Yuan-Yen Peng."
@@ -13,20 +16,31 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap"
+    />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
       onload="renderMathInElement(document.body, { delimiters: [
         { left: '$$', right: '$$', display: true },
         { left: '\\[', right: '\\]', display: true },
         { left: '\\(', right: '\\)', display: false },
         { left: '$', right: '$', display: false }
-      ]});"></script>
+      ]});"
+    ></script>
   </head>
+
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="masthead masthead-short" aria-label="Projects hero">
       <div class="topbar">
         <div class="topbar-inner wrap-wide">
@@ -42,8 +56,13 @@
           </nav>
         </div>
       </div>
+
       <div class="hero-copy wrap-wide">
         <h1>Projects</h1>
+        <!-- <p class="lead">
+          My projects connect ATLAS Higgs/EW measurements with ML-assisted reconstruction,
+          quantum-information observables, and detector-aware analysis workflows.
+        </p> -->
       </div>
     </header>
 
@@ -53,19 +72,27 @@
           <div class="feature-text">
             <h3>HWW quantum information measurement</h3>
             <p>
-              <b>Problem:</b> $H \to WW^* \to \ell\nu\ell\nu$ contains spin-correlation and W-polarization information, but the two neutrinos make key rest-frame variables under-constrained.
+              <b>Problem:</b> $H \to WW^\ast \to \ell\nu\ell\nu$
+              provides a unique context (LHC and $V-A$ signatures) to probe spin correlations in a $WW^\ast$ system.
             </p>
             <p>
-              <b>My role:</b> Contributed from the kickoff stage, focusing on missing-information reconstruction and its connection to W-polarization and spin-correlation observables. I am a member of the NRML $H \to WW^\ast$ quantum-information measurement effort for Run 2 + partial Run 3 (ANA-HIGP-2024-27).
+              <b>My role:</b> Contributed from the kickoff stage, focusing on
+              missing-information reconstruction and its connection to W-polarization
+              and spin-correlation observables in the NRML $H \to WW^\ast$
+              quantum-information effort.
             </p>
             <p>
-              <b>Output:</b> MSc thesis and ATLAS internal-note contribution on HWW quantum information, W polarization, and ML-assisted reconstruction.
+              <b>Output:</b> MSc thesis and ATLAS internal-note contribution on HWW
+              quantum information, W-polarization interpretation, and ML-assisted
+              reconstruction.
             </p>
             <p>
-              <b>Relevance:</b> Prepares me for Higgs/SM precision, diboson polarization, SMEFT, and quantum-information measurements where
-              reconstruction must remain interpretable and analysis-validatable.
+              <b>Relevance:</b> Directly prepares me for Higgs/SM precision, diboson
+              polarization, SMEFT, and quantum-information measurements requiring
+              interpretable, analysis-validatable reconstruction.
             </p>
           </div>
+
           <div class="feature-media">
             <img
               src="./assets/quantum-entanglement.png"
@@ -81,20 +108,33 @@
           <div class="feature-text">
             <h3>Missing-information reconstruction in HWW</h3>
             <p>
-              <b>Problem:</b> Two unobserved neutrinos prevent direct reconstruction of rest-frame variables needed for polarization and spin-correlation observables.
+              <b>Problem:</b> Two unobserved neutrinos prevent direct reconstruction of
+              rest-frame variables needed for W-polarization and spin-correlation
+              observables.
             </p>
             <p>
-              <b>My role:</b> Developed and validated ML-assisted reconstruction strategies for W and neutrino kinematics, emphasizing analysis-level validation rather than standalone ML scores.
+              <b>My role:</b> Developed and validated ML-assisted reconstruction
+              strategies for $W$ kinematics, emphasizing analysis-level
+              validation over standalone ML metrics.
             </p>
             <p>
-              <b>Output:</b> An attention-based, physics-constrained reconstruction model integrated into the central QE analysis framework.
+              <b>Output:</b> Attention-based, physics-constrained and adaptive multi-losses reconstruction model
+              integrated into the central analysis framework (FastFrame).
             </p>
             <p>
-              <b>Relevance:</b> The key tests are shape, bias, resolution, truth-to-reco behavior, robustness, and comparison with non-ML baselines.
+              <b>Relevance:</b> Validation focuses on shape, bias, resolution,
+              truth-to-reco behavior, robustness, and comparison with non-ML baselines.
             </p>
           </div>
+
           <div class="feature-media">
-            <img src="./assets/ml.png" alt="Combined ML reconstruction histograms" width="1022" height="526" loading="lazy" />
+            <img
+              src="./assets/ml.png"
+              alt="Combined ML reconstruction histograms"
+              width="1022"
+              height="526"
+              loading="lazy"
+            />
           </div>
         </article>
 
@@ -102,21 +142,35 @@
           <div class="feature-text">
             <h3>Run 3, HGTD, and reproducible workflows</h3>
             <p>
-              <b>Problem:</b> ATLAS analyses require reliable validation, detector-facing service, and computing environments that survive handover and reuse.
+              <b>Problem:</b> ATLAS analyses require validation, detector-facing service,
+              and computing workflows that remain reliable across review, handover, and
+              reuse.
             </p>
             <p>
-              <b>My role:</b> Contributed to Run 3 HWW first-look studies, SR/CR validation, and framework development as a member of the NRML ggF+VBF $H \to WW^\ast$ Run 3 effort (ANA-HIGP-2024-51). I also supported MSc-student onboarding, co-developed HGTD database components, and maintained local ATLAS/ML workflows.
+              <b>My role:</b> Contributed to Run 3 $HWW^\ast$ first-look studies, SR/CR
+              validation, and framework development in the NRML ggF+VBF
+              $H \to WW^\ast$ Run 3 effort. I also co-developed HGTD database components
+              and supported MSc-student onboarding.
             </p>
             <p>
-              <b>Methods:</b> FastFrames, ROOT, Docker/Podman, CernVM-FS, Git, Django/Vue, and group-level workflow support.
+              <b>Methods:</b> FastFrames, ROOT, Docker/Podman, CernVM-FS, Git,
+              Django/Vue, and group-level workflow support.
             </p>
             <p>
-              <b>Relevance:</b> Show readiness for reviewable ATLAS work combining analysis validation, detector service, and reproducible software.
+              <b>Relevance:</b> Demonstrates readiness for reviewable ATLAS work
+              combining physics validation, detector service, and reproducible software.
             </p>
           </div>
+
           <div class="feature-media">
             <figure class="run3-combined-figure">
-              <img src="./assets/run3.png" alt="ATLAS Run 3 coupling analysis" width="916" height="433" loading="lazy" />
+              <img
+                src="./assets/run3.png"
+                alt="ATLAS Run 3 coupling analysis"
+                width="916"
+                height="433"
+                loading="lazy"
+              />
             </figure>
           </div>
         </article>
@@ -136,31 +190,57 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <span class="footer-affiliation">Affiliated and collaborating institutes:</span>
+
         <div class="footer-logo-row" aria-label="Affiliated and collaborating institutions">
           <a href="https://www.nthu.edu.tw/" aria-label="National Tsing Hua University official website">
-            <img src="./assets/nthu-logo.png" alt="National Tsing Hua University logo" width="1920" height="1921" />
+            <img
+              src="./assets/nthu-logo.png"
+              alt="National Tsing Hua University logo"
+              width="1920"
+              height="1921"
+            />
           </a>
           <a href="https://www.sinica.edu.tw/" aria-label="Academia Sinica official website">
-            <img src="./assets/as-logo.png" alt="Academia Sinica logo" width="1920" height="1920" />
+            <img
+              src="./assets/as-logo.png"
+              alt="Academia Sinica logo"
+              width="1920"
+              height="1920"
+            />
           </a>
           <a href="https://home.cern/" aria-label="CERN official website">
-            <img src="./assets/cern-logo.png" alt="CERN logo" width="1182" height="1182" />
+            <img
+              src="./assets/cern-logo.png"
+              alt="CERN logo"
+              width="1182"
+              height="1182"
+            />
           </a>
         </div>
+
         <div class="footer-meta-row">
           <details class="media-terms">
             <summary>Media terms</summary>
             <div class="media-terms-card">
-              <button class="media-terms-close" type="button" aria-label="Close media terms" onclick="this.closest('details').removeAttribute('open')">X</button>
+              <button
+                class="media-terms-close"
+                type="button"
+                aria-label="Close media terms"
+                onclick="this.closest('details').removeAttribute('open')"
+              >
+                X
+              </button>
               <p><b>Media credits</b></p>
               <p>Banner source: CERN, &copy; CERN. ATLAS-related media: ATLAS Experiment &copy; CERN.</p>
               <p>
-                Use follows the <a href="https://copyright.web.cern.ch/">CERN Audiovisual Media Terms of Use</a>
+                Use follows the
+                <a href="https://copyright.web.cern.ch/">CERN Audiovisual Media Terms of Use</a>
                 and <a href="https://atlas.cern/copyright">ATLAS Terms of Use</a>.
               </p>
               <p>Personal site; not endorsed by CERN or ATLAS.</p>
             </div>
           </details>
+
           <span class="footer-updated">Last updated: July 2026</span>
         </div>
       </div>
