@@ -354,6 +354,10 @@ a:focus-visible {
   box-shadow: none;
 }
 
+.research-snapshot > p {
+  max-width: none;
+}
+
 .section-title {
   margin: 0 0 1.45rem;
   color: var(--text);
@@ -486,78 +490,37 @@ a:focus-visible {
   text-align: center;
 }
 
-.table-wrap {
-  width: 100%;
-  overflow-x: auto;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--surface);
+.output-list {
+  display: grid;
+  gap: 0;
+  margin: 0;
 }
 
-.evidence-table {
-  width: 100%;
-  min-width: 620px;
-  border-collapse: collapse;
-  font-size: 0.94rem;
-  line-height: 1.45;
+.output-item {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
 }
 
-.evidence-table th,
-.evidence-table td {
-  padding: 0.8rem 0.85rem;
-  text-align: left;
-  vertical-align: middle;
-  border-bottom: 1px solid var(--line);
+.output-item:first-child {
+  padding-top: 0;
+  border-top: 0;
 }
 
-.evidence-table th {
-  color: var(--atlas-navy);
-  font-family: var(--font-sans);
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
-  background: var(--surface-soft);
+.output-item:last-child {
+  padding-bottom: 0;
 }
 
-.evidence-table tr:last-child td {
-  border-bottom: 0;
+.output-item dt {
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.4;
 }
 
-.status-badge {
-  display: inline-block;
-  white-space: nowrap;
-  font-family: var(--font-sans);
-  margin: 0.08rem 0.18rem 0.08rem 0;
-  padding: 0.16rem 0.46rem;
-  border-radius: 999px;
-  font-size: 0.74rem;
-  font-weight: 600;
-  letter-spacing: 0.015em;
-}
-
-.status-badge.public {
-  color: #064b32;
-  background: #e5f5ec;
-}
-
-.status-badge.internal {
-  color: #5c3200;
-  background: #fff0d6;
-}
-
-.status-badge.restricted {
-  color: #12385d;
-  background: #e5f0fb;
-}
-
-.access-note {
+.output-item dd {
+  margin: 0.35rem 0 0;
   color: var(--muted);
-  font-size: 0.98rem !important;
-}
-
-.research-snapshot .access-note {
-  max-width: none;
+  font-size: 0.98rem;
+  line-height: 1.56;
 }
 
 /* Project Rows */
@@ -647,6 +610,8 @@ a:focus-visible {
 
 .content-block p b,
 .feature-text p b,
+.content-block p strong,
+.feature-text p strong,
 .list-clean b,
 .program p b {
   color: var(--text);

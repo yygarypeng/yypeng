@@ -1,13 +1,13 @@
 # Yuan-Yen Peng Portfolio Website
 
-Static multi-page research portfolio for ATLAS PhD applications and cold-email evidence links. The site is intentionally compact: ATLAS HWW physics, missing-information reconstruction, validation-oriented ML, Run 3 analysis support, HGTD service work, and public-safe outputs.
+Static multi-page research portfolio for ATLAS PhD applications and evidence links. The site presents physics-informed reconstruction and inference for partially observed collider events, grounded in ATLAS HWW physics, analysis-level validation, Run 3 work, and HGTD detector-upgrade experience.
 
 ## Site Structure
 
-- `index.html` — 30-second homepage for ATLAS HWW identity, physics-guided ML fit, selected evidence links, and four quick profile cards
-- `phd.html` — advisor-facing page with immediate contribution areas and four selected PhD directions
-- `projects.html` — three compact project evidence blocks using `Problem / My role / Output / Relevance`
-- `outputs.html` — public and public-safe evidence table for thesis, ATLAS note, talks, analysis work, software, and access status
+- `index.html` — concise ATLAS physicist introduction and four quick profile cards
+- `phd.html` — advisor-facing summary of the foundation offered and the project ownership sought
+- `projects.html` — three flagship projects using `Physics question / My contribution / Evidence / Why it matters`
+- `outputs.html` — public-safe evidence grouped into selected and technical output sections
 - `contact.html` — sparse contact page with CERN email, internal-contact route, affiliation, CV/thesis/output links, and profiles
 - `styles.css` — shared design tokens, typography, layout sections, responsive rules, focus states, and footer/logo treatment
 - `assets/` — hero image, project figures, portrait, CV, and institutional logos
@@ -42,10 +42,10 @@ Update page content directly in the HTML files above, including:
 
 Keep pages compact. The intended text density is:
 
-- Home: three short identity/fit sentences plus four cards
-- PhD: one short opening, four immediate contribution areas, four selected directions
-- Projects: three projects only
-- Outputs: one public-safe summary paragraph plus the evidence table
+- Home: two short identity/fit paragraphs plus four cards
+- PhD: one short opening, three evidence items, and one project-direction paragraph
+- Projects: three flagship projects plus a compact additional-work note
+- Outputs: two compact evidence sections
 - Contact: minimal contact and profile links
 
 If you add new media, place files in `assets/` and reference them with relative paths (for example `./assets/your-image.png`). Remove unused media before publishing.

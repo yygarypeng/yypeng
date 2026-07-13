@@ -6,14 +6,14 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
     <meta
       name="description"
-      content="Scientific outputs, ATLAS talks, honors, and technical highlights from Yuan-Yen Peng."
+      content="Selected public-safe evidence of Yuan-Yen Peng's ATLAS physics analysis, reconstruction, software, and detector contributions."
     />
     <meta name="theme-color" content="#001f3f" />
     <title>Outputs | Yuan-Yen Peng</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Marcellus&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Marcellus&amp;display=swap" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -48,85 +48,63 @@
     </header>
 
     <main id="main-content" class="content">
-      <section class="content-block research-snapshot" aria-label="evidence summary">
-        <h2 class="section-title">Selected Outputs</h2>
-        <div class="table-wrap" role="region" aria-label="Condensed outputs table" tabindex="0">
-          <table class="evidence-table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Status</th>
-                <th>My role</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <a href="https://etd.lib.nthu.edu.tw/thesis/detail/d5387241bad28abb4b3cb0facb63184d/">MSc thesis</a>
-                  and ATLAS internal note ANA-HIGP-2024-27-INT1
-                </td>
-                <td>
-                  <span class="status-badge public">Public thesis</span>
-                  <span class="status-badge internal">ATLAS-internal note</span>
-                </td>
-                <td>Author of the thesis; contributor to ML-assisted reconstruction and W-polarization interpretation in the internal note.</td>
-              </tr>
-              <tr>
-                <td>ML-assisted reconstruction in the central QE framework</td>
-                <td><span class="status-badge internal">Internal</span></td>
-                <td>Developed validation-oriented reconstruction workflows for under-constrained HWW final states.</td>
-              </tr>
-              <tr>
-                <td>Run 3 HWW coupling analysis</td>
-                <td><span class="status-badge internal">Internal</span></td>
-                <td>Contributed to first-look studies, SR/CR validation, and MSc-student support.</td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="https://indico.cern.ch/event/1441377/contributions/6065508/">ATLAS Collaboration Week 2024</a>
-                  and
-                  <a href="https://indico.cern.ch/event/1498256/contributions/6453803/">NRML Workshop 2025</a>
-                  talks
-                </td>
-                <td><span class="status-badge restricted">Access-dependent</span></td>
-                <td>Presented HWW reconstruction and ML-assisted analysis work in ATLAS settings.</td>
-              </tr>
-              <tr>
-                <td>HGTD production database and NTHU ATLAS/ML workstation</td>
-                <td><span class="status-badge restricted">Project/group</span></td>
-                <td>Co-developed database components and supported reproducible ATLAS/ML workflows.</td>
-              </tr>
-              <tr>
-                <td>
-                  Code and environments:
-                  <a href="https://github.com/yygarypeng">GitHub</a>,
-                  <a href="https://gitlab.cern.ch/ypeng">CERN GitLab</a>,
-                  <a href="https://hub.docker.com/repositories/yygarypeng">Docker Hub</a>
-                </td>
-                <td>
-                  <span class="status-badge public">Public</span>
-                  <span class="status-badge restricted">CERN-restricted</span>
-                </td>
-                <td>Maintained public profiles, collaboration repositories, and containerized workflow material.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="access-note">
-          I do not post ATLAS-internal details publicly. Contents are shared here at a public-safe level.
-          For ATLAS collaborators, I am happy to discuss the internal context through appropriate collaboration channels.
+      <!-- <section class="content-block research-snapshot" aria-label="Outputs introduction">
+        <p>
+          Selected evidence of my physics analysis, reconstruction, software,
+          and detector contributions. ATLAS-internal work is described only at
+          a public-safe level.
         </p>
+      </section> -->
+
+      <section class="content-block" aria-labelledby="physics-analysis-title">
+        <h2 class="section-title" id="physics-analysis-title">Selected outputs</h2>
+        <dl class="output-list">
+          <div class="output-item">
+            <dt><a href="https://etd.lib.nthu.edu.tw/thesis/detail/d5387241bad28abb4b3cb0facb63184d/">Quantum Entanglement Measurements in the HWW Decay Channel</a></dt>
+            <dd>Authored an MSc thesis on quantum tomography and Bell-type observables in truth- and reconstruction-level Monte Carlo studies.</dd>
+          </div>
+          <div class="output-item">
+            <dt>Run 3 HWW coupling analysis</dt>
+            <dd>Contributed to first-look studies and SR/CR validation.</dd>
+          </div>
+          <div class="output-item">
+            <dt>ATLAS HWW reconstruction talks</dt>
+            <dd>Presented the analysis work at <a href="https://indico.cern.ch/event/1441377/contributions/6065508/">ATLAS Collaboration Week 2024</a> and the <a href="https://indico.cern.ch/event/1498256/contributions/6453803/">NRML Workshop 2025</a>.</dd>
+          </div>
+          <div class="output-item">
+            <dt>ATLAS HGTD production database</dt>
+            <dd>Co-developed a detector upgrade database and established structured group data-storage workflows.</dd>
+          </div>
+        </dl>
       </section>
 
-      <section class="content-block">
-        <h2 class="section-title">Honors and skills</h2>
-        <ul class="list-clean list-wide">
-          <li><b>Honors:</b> Phi Tau Phi Scholastic Honor Society, College of Science Elite Student Award, Maxwell Scholarship.</li>
-          <li><b>HEP/analysis:</b> ROOT, FastFrames, uproot, mplhep, Python, C++.</li>
-          <li><b>ML/software:</b> PyTorch/Lightning, FrEIA, ONNX, TensorFlow/Keras, Git, Docker/Podman, CernVM-FS, UNIX.</li>
-          <li><b>Languages:</b> English (TOEFL iBT 101), Mandarin Chinese (native).</li>
-        </ul>
+      <section class="content-block" aria-labelledby="Technical-outputs-title">
+        <h2 class="section-title" id="Technical-outputs-title">Technical outputs</h2>
+        <dl class="output-list">
+          <div class="output-item">
+            <dt>Missing-information reconstruction in HWW</dt>
+            <dd>Developed ML-based reconstruction workflows for under-constrained final states.</dd>
+          </div>
+          <div class="output-item">
+            <dt>Reproducible environments and side projects</dt>
+            <dd>Maintained collaboration repositories, containerized workflows, and other projects on <a href="https://github.com/yygarypeng">GitHub</a>, <a href="https://gitlab.cern.ch/ypeng">CERN GitLab</a>, and <a href="https://hub.docker.com/repositories/yygarypeng">Docker Hub</a>.</dd>
+          </div>
+          <div class="output-item">
+            <dt>NTHU ATLAS/ML workstation</dt>
+            <dd>Set up and supported reproducible group computing workflows from scratch.</dd>
+          </div>
+        </dl>
       </section>
+
+      <!-- <section class="content-block" aria-labelledby="detector-service-title">
+        <h2 class="section-title" id="detector-service-title">Detector and service</h2>
+        <dl class="output-list">
+          <div class="output-item">
+            <dt>ATLAS HGTD production database and NTHU ATLAS/ML workstation</dt>
+            <dd>Co-developed detector-upgrade database components and set up and supported reproducible group computing workflows.</dd>
+          </div>
+        </dl>
+      </section> -->
     </main>
 
     <footer class="site-footer">
