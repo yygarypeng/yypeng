@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self';">
     <meta
       name="description"
       content="Selected public-safe evidence of Yuan-Yen Peng's ATLAS physics analysis, reconstruction, software, and detector contributions."
@@ -14,16 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Marcellus&amp;display=swap" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-      onload="renderMathInElement(document.body, { delimiters: [
-        { left: '$$', right: '$$', display: true },
-        { left: '\\[', right: '\\]', display: true },
-        { left: '\\(', right: '\\)', display: false },
-        { left: '$', right: '$', display: false }
-      ]});"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -48,14 +38,6 @@
     </header>
 
     <main id="main-content" class="content">
-      <!-- <section class="content-block research-snapshot" aria-label="Outputs introduction">
-        <p>
-          Selected evidence of my physics analysis, reconstruction, software,
-          and detector contributions. ATLAS-internal work is described only at
-          a public-safe level.
-        </p>
-      </section> -->
-
       <section class="content-block" aria-labelledby="physics-analysis-title">
         <h2 class="section-title" id="physics-analysis-title">Selected outputs</h2>
         <dl class="output-list">
@@ -95,16 +77,6 @@
           </div>
         </dl>
       </section>
-
-      <!-- <section class="content-block" aria-labelledby="detector-service-title">
-        <h2 class="section-title" id="detector-service-title">Detector and service</h2>
-        <dl class="output-list">
-          <div class="output-item">
-            <dt>ATLAS HGTD production database and NTHU ATLAS/ML workstation</dt>
-            <dd>Co-developed detector-upgrade database components and set up and supported reproducible group computing workflows.</dd>
-          </div>
-        </dl>
-      </section> -->
     </main>
 
     <footer class="site-footer">

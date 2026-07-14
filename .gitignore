@@ -1,6 +1,13 @@
+# macOS and archive artifacts
 .DS_Store
+__MACOSX/
+*.zip
+
+# Local agent configuration
 AGENTS.md
 .agents/
 skills-lock.json
+
+# Local CSS audit output
 css_classes.txt
 classes.txt

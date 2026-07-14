@@ -244,13 +244,8 @@ a:focus-visible {
 }
 
 .content > :first-child,
-.content > .feature-stack:first-child .feature-row:first-child,
-.content > .content-block:first-child {
+.content > .feature-stack:first-child .feature-row:first-child {
   border-top: 0;
-}
-
-.intro-modern {
-  background: var(--surface);
 }
 
 .intro-grid {
@@ -266,19 +261,6 @@ a:focus-visible {
 
 .intro-copy p {
   max-width: var(--measure);
-}
-
-.intro-heading-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
-.intro-title {
-  font-size: clamp(1.95rem, 3vw, 2.5rem);
-  margin: 0;
 }
 
 .intro-identity {
@@ -346,15 +328,7 @@ a:focus-visible {
   margin-bottom: 0;
 }
 
-.research-snapshot {
-  border-top-color: var(--accent);
-  border-top-width: 2px;
-  background: var(--surface);
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.research-snapshot > p {
+.wide-copy p {
   max-width: none;
 }
 
@@ -371,10 +345,6 @@ a:focus-visible {
   text-wrap: balance;
 }
 
-.research-thesis {
-  background: var(--surface);
-}
-
 .phd-wide p {
   max-width: none;
 }
@@ -386,10 +356,6 @@ a:focus-visible {
 
 .contact-preface p {
   margin: 0;
-}
-
-.research-fit-grid .program:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
 }
 
 .program-grid.research-fit-grid {
@@ -406,7 +372,7 @@ a:focus-visible {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1.3rem, 2.8vw, 2rem);
-  margin: 0;
+  margin: 1.35rem 0 0;
 }
 
 .program {
@@ -417,10 +383,6 @@ a:focus-visible {
   border-radius: 0;
   box-shadow: none;
   min-height: 0;
-}
-
-.program-grid {
-  margin-top: 1.35rem;
 }
 
 .program h3 {
@@ -445,10 +407,6 @@ a:focus-visible {
   margin-top: 0.95rem;
 }
 
-.research-fit .program p + p {
-  margin-top: 0.5rem;
-}
-
 .button-row {
   margin-top: 1.2rem;
   display: flex;
@@ -466,7 +424,7 @@ a:focus-visible {
   padding: 0.58rem 0.95rem;
   border-radius: 3px;
   box-shadow: none;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease,
+  transition: transform 0.15s ease, background-color 0.15s ease,
     border-color 0.15s ease, color 0.15s ease;
   touch-action: manipulation;
 }
@@ -476,18 +434,12 @@ a:focus-visible {
   background: var(--atlas-navy);
   border-color: var(--atlas-navy);
   color: #ffffff;
-  box-shadow: none;
 }
 
 .button-row a:focus-visible {
   background: var(--atlas-navy);
   border-color: var(--atlas-navy);
   color: #ffffff;
-}
-
-.button-row-eval a {
-  min-width: 198px;
-  text-align: center;
 }
 
 .output-list {
@@ -562,7 +514,6 @@ a:focus-visible {
   margin-top: 1.2rem;
 }
 
-.split-2 .feature-text p:first-of-type,
 .content-block p:first-of-type {
   margin-top: 0;
 }
@@ -608,35 +559,17 @@ a:focus-visible {
   text-wrap: balance;
 }
 
-.content-block p b,
-.feature-text p b,
 .content-block p strong,
 .feature-text p strong,
-.list-clean b,
-.program p b {
+.list-clean b {
   color: var(--text);
   font-family: var(--font-sans);
   font-style: normal;
   font-weight: 600;
 }
 
-.content-block p em,
-.feature-text p em {
-  color: #24303d;
-  font-style: italic;
-}
-
 .hero-copy .hero-sub span {
   display: block;
-}
-
-.hero-copy .hero-sub span + span {
-  margin-top: 0.35rem;
-  font-family: var(--font-sans);
-  font-size: clamp(0.98rem, 1.4vw, 1.22rem);
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.01em;
 }
 
 .feature-media img {
@@ -650,17 +583,7 @@ a:focus-visible {
 
 .run3-combined-figure {
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   width: 100%;
-  overflow: visible;
-}
-
-.run3-combined-figure img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* Lists and Footer */
@@ -675,10 +598,6 @@ a:focus-visible {
   margin: 0.68rem 0;
   font-size: 1.06rem;
   line-height: 1.6;
-}
-
-.list-wide {
-  max-width: none;
 }
 
 .site-footer {
@@ -873,11 +792,6 @@ a:focus-visible {
     gap: 2rem;
   }
 
-  .hero-copy {
-    text-align: center;
-    padding: 1.5rem 0;
-  }
-
   .intro-grid {
     grid-template-columns: 1fr;
     gap: 1.8rem;
@@ -885,11 +799,6 @@ a:focus-visible {
 
   .intro-identity {
     justify-content: center;
-  }
-
-  .intro-heading-row {
-    justify-content: flex-start;
-    flex-wrap: wrap;
   }
 
   .intro-portrait {
@@ -919,7 +828,6 @@ a:focus-visible {
   }
 
   body {
-    padding-top: 0;
     font-size: 17px;
   }
 
@@ -928,7 +836,6 @@ a:focus-visible {
     min-height: 390px;
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
-    padding-top: 0;
     place-items: stretch;
   }
 
@@ -994,27 +901,15 @@ a:focus-visible {
   }
 
   .content {
-    padding: 0;
     width: min(calc(100% - 1rem), 680px);
-  }
-
-  .feature-text,
-  .feature-media {
-    padding: 0;
   }
 
   .content-block p {
     font-size: 1.06rem;
-    max-width: none;
   }
 
   .list-clean li {
     font-size: 1rem;
-  }
-
-  .split-2,
-  .program-grid {
-    gap: 1.5rem;
   }
 
   .button-row {

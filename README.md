@@ -12,7 +12,7 @@ Static multi-page research portfolio for ATLAS PhD applications and evidence lin
 - `styles.css` — shared design tokens, typography, layout sections, responsive rules, focus states, and footer/logo treatment
 - `assets/` — hero image, project figures, portrait, CV, and institutional logos
 
-All pages share the same top navigation, KaTeX setup, Google Fonts setup, content-security policy, footer wording, and institutional logo footer.
+All pages share the same top navigation, Google Fonts setup, footer wording, and institutional logo footer. Pages that contain physics notation also load KaTeX and allow its CDN in their content-security policy.
 
 Typography uses Google Fonts for cross-device consistency: `Marcellus` for display/title text, with Optima-style fallbacks, and `Inter` for body/UI text, with Helvetica Neue-style fallbacks. The CSS does not depend on local font files.
 
@@ -52,11 +52,11 @@ If you add new media, place files in `assets/` and reference them with relative 
 
 When adding images, include meaningful `alt` text plus `width` and `height` attributes to avoid layout shift. Use `loading="lazy"` for below-fold images.
 
-Every page includes KaTeX from jsDelivr and a `renderMathInElement(...)` block for inline physics notation. Preserve this block if editing page headers.
+`index.html` and `projects.html` include KaTeX from jsDelivr for inline physics notation. Preserve the KaTeX setup and matching content-security policy entries on pages that contain math.
 
 Every page also loads Google Fonts from `fonts.googleapis.com` / `fonts.gstatic.com`. If changing fonts, update both the `<link>` tags and the per-page content-security policy.
 
-Do not publish local artifacts such as `.DS_Store`, `__MACOSX/`, local font folders, or zip exports.
+Do not publish local artifacts such as `.DS_Store`, `__MACOSX/`, or zip exports.
 
 ## Continuous Integration
 
