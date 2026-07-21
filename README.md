@@ -1,11 +1,11 @@
 # Yuan-Yen Peng Portfolio Website
 
-Static multi-page research portfolio for ATLAS PhD applications and evidence links. The site presents physics-informed reconstruction and inference for partially observed collider events, grounded in ATLAS HWW physics, analysis-level validation, Run 3 work, and HGTD detector-upgrade experience.
+Static multi-page research portfolio for LHC PhD applications and evidence links. The site presents physics-informed reconstruction and inference for partially observed collider events, grounded in ATLAS HWW physics, analysis-level validation, Run 3 work, and HGTD detector-upgrade experience.
 
 ## Site Structure
 
-- `index.html` — concise ATLAS physicist introduction and four quick profile cards
-- `phd.html` — advisor-facing summary of the foundation offered and the project ownership sought
+- `index.html` — concise experimental particle physicist introduction and four quick profile cards
+- `phd.html` — general research interests and an advisor-facing summary of the foundation offered
 - `projects.html` — three flagship projects using `Physics question / My contribution / Evidence / Why it matters`
 - `outputs.html` — public-safe evidence grouped into selected and technical output sections
 - `contact.html` — sparse contact page with CERN email, internal-contact route, affiliation, CV/thesis/output links, and profiles
